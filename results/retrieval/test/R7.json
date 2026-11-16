@@ -1,0 +1,1620 @@
+{
+  "summary": {
+    "config": "R7",
+    "method": "hybrid",
+    "filter": true,
+    "top_k": 3,
+    "budget": 6000,
+    "expand_article": true,
+    "hypothesis": "Thêm sau lỗi q05/q12 trên dev: hit nằm ở phần khác cùng Điều -> mở rộng Điều, không rerank.",
+    "split": "test",
+    "N_answerable": 5,
+    "hit1": 3,
+    "hit3": 5,
+    "context_evidence": 5,
+    "mrr10": 0.7667,
+    "avg_context_chars": 2702,
+    "median_ms": 34.5,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q17",
+      "q18"
+    ],
+    "wall_seconds": 0.3,
+    "run_at": "2026-11-16T12:07:52+00:00"
+  },
+  "traces": [
+    {
+      "query_id": "q16",
+      "split": "test",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+      "query": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 34.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d025-B-00",
+          "source_id": "blld-2019",
+          "page": 25,
+          "score": 0.032787,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.625356
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 75.095336
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d024-B-00",
+          "source_id": "blld-2019",
+          "page": 24,
+          "score": 0.032002,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.502562
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 35.124701
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d027-B-00",
+          "source_id": "blld-2019",
+          "page": 27,
+          "score": 0.031754,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.420337
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 36.765324
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d026-B-00",
+          "source_id": "blld-2019",
+          "page": 26,
+          "score": 0.031498,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.451444
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 33.783214
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d034-B-01",
+          "source_id": "blld-2019",
+          "page": 34,
+          "score": 0.029877,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.397567
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 25.321308
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.02885,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.389057
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 23.707692
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d173-B-00",
+          "source_id": "blld-2019",
+          "page": 173,
+          "score": 0.027783,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.362909
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 24.584164
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d030-B-00",
+          "source_id": "blld-2019",
+          "page": 30,
+          "score": 0.02773,
+          "components": {
+            "dense": {
+              "rank": 21,
+              "score": 0.341361
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 33.403095
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d123-B-00",
+          "source_id": "blld-2019",
+          "page": 123,
+          "score": 0.02712,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.385801
+            },
+            "bm25_bigram": {
+              "rank": 22,
+              "score": 21.757959
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d212-B-00",
+          "source_id": "blld-2019",
+          "page": 212,
+          "score": 0.026905,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.366261
+            },
+            "bm25_bigram": {
+              "rank": 18,
+              "score": 22.563324
+            }
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d025-B-00",
+        "blld-2019-d024-B-00",
+        "blld-2019-d027-B-00"
+      ],
+      "context_chars": 1998,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q17",
+      "split": "test",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+      "query": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+      "filter": {
+        "year": 2012
+      },
+      "elapsed_ms": 35.2,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d037-B-00",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.032018,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.515305
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 77.557132
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d038-B-01",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.032018,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.623818
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 46.915576
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d037-B-01",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.032002,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.610085
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 49.146551
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d037-B-02",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.032002,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.547978
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 49.849912
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d038-B-00",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.030077,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.490133
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 43.140038
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d042-B-01",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.028992,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.480497
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 37.685103
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d043-B-00",
+          "source_id": "blld-2012",
+          "page": 43,
+          "score": 0.028992,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.47312
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 41.157071
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d180-B-00",
+          "source_id": "blld-2012",
+          "page": 180,
+          "score": 0.028814,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.459973
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 42.534233
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d047-B-00",
+          "source_id": "blld-2012",
+          "page": 47,
+          "score": 0.028309,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.492134
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 27.485974
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d022-B-01",
+          "source_id": "blld-2012",
+          "page": 22,
+          "score": 0.028043,
+          "components": {
+            "dense": {
+              "rank": 19,
+              "score": 0.417275
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 43.613542
+            }
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d037-B-00",
+        "blld-2012-d037-B-01",
+        "blld-2012-d037-B-02",
+        "blld-2012-d038-B-01",
+        "blld-2012-d038-B-00"
+      ],
+      "context_chars": 4212,
+      "hit1": false,
+      "hit3": true,
+      "first_hit_rank": 3,
+      "context_hit": true
+    },
+    {
+      "query_id": "q18",
+      "split": "test",
+      "answerable": true,
+      "question": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+      "query": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+      "filter": null,
+      "elapsed_ms": 35.2,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d036-B-02",
+          "source_id": "blld-2019",
+          "page": 36,
+          "score": 0.032522,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.745656
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 87.525967
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d035-B-00",
+          "source_id": "blld-2019",
+          "page": 35,
+          "score": 0.032266,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.701235
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 90.239421
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d038-B-01",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.031754,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.710359
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 81.787622
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d037-B-02",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.031498,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.694129
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 85.868634
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d037-B-01",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.030769,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.672175
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 66.321772
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d042-B-01",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.030077,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.59458
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 55.250341
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d038-B-00",
+          "source_id": "blld-2019",
+          "page": 38,
+          "score": 0.029418,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.584591
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 54.753143
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d040-B-00",
+          "source_id": "blld-2012",
+          "page": 40,
+          "score": 0.02879,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.563572
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 54.753143
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d036-B-00",
+          "source_id": "blld-2019",
+          "page": 36,
+          "score": 0.027598,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.540184
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 53.149779
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d041-B-00",
+          "source_id": "blld-2019",
+          "page": 41,
+          "score": 0.027402,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.550843
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 49.050877
+            }
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d036-B-02",
+        "blld-2019-d036-B-00",
+        "blld-2019-d036-B-01",
+        "blld-2019-d035-B-00",
+        "blld-2019-d035-B-01",
+        "blld-2012-d038-B-01"
+      ],
+      "context_chars": 5337,
+      "hit1": false,
+      "hit3": true,
+      "first_hit_rank": 2,
+      "context_hit": true
+    },
+    {
+      "query_id": "q19",
+      "split": "test",
+      "answerable": true,
+      "question": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+      "query": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+      "filter": null,
+      "elapsed_ms": 34.1,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d024-B-00",
+          "source_id": "blld-2019",
+          "page": 24,
+          "score": 0.031778,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.647625
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 25.539033
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d026-B-00",
+          "source_id": "blld-2012",
+          "page": 26,
+          "score": 0.03125,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.574406
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 27.294919
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d027-B-00",
+          "source_id": "blld-2019",
+          "page": 27,
+          "score": 0.030798,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.502546
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 30.397119
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d027-B-00",
+          "source_id": "blld-2012",
+          "page": 27,
+          "score": 0.030366,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.584219
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 19.171366
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d025-B-00",
+          "source_id": "blld-2019",
+          "page": 25,
+          "score": 0.030018,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.637648
+            },
+            "bm25_bigram": {
+              "rank": 12,
+              "score": 18.386883
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d029-B-00",
+          "source_id": "blld-2012",
+          "page": 29,
+          "score": 0.029857,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.480908
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 24.896036
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d022-B-01",
+          "source_id": "blld-2012",
+          "page": 22,
+          "score": 0.028577,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.447314
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 18.553331
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d026-B-00",
+          "source_id": "blld-2019",
+          "page": 26,
+          "score": 0.028543,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.55846
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 16.623095
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d028-B-00",
+          "source_id": "blld-2012",
+          "page": 28,
+          "score": 0.028139,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.511632
+            },
+            "bm25_bigram": {
+              "rank": 17,
+              "score": 16.468365
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d018-B-00",
+          "source_id": "blld-2012",
+          "page": 18,
+          "score": 0.027799,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.404151
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 18.856857
+            }
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d024-B-00",
+        "blld-2012-d026-B-00",
+        "blld-2019-d027-B-00"
+      ],
+      "context_chars": 1714,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q20",
+      "split": "test",
+      "answerable": true,
+      "question": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+      "query": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+      "filter": null,
+      "elapsed_ms": 33.5,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d161-B-00",
+          "source_id": "blld-2012",
+          "page": 161,
+          "score": 0.032787,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.741114
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 45.793265
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d143-B-00",
+          "source_id": "blld-2019",
+          "page": 143,
+          "score": 0.032258,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.727655
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 39.695481
+            }
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d144-B-00",
+          "source_id": "blld-2019",
+          "page": 144,
+          "score": 0.031498,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.609036
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 39.092123
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d163-B-00",
+          "source_id": "blld-2012",
+          "page": 163,
+          "score": 0.03055,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.589732
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 38.149
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d147-B-00",
+          "source_id": "blld-2019",
+          "page": 147,
+          "score": 0.029877,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.60254
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 26.010284
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d162-B-00",
+          "source_id": "blld-2012",
+          "page": 162,
+          "score": 0.029236,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.57228
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 34.132823
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.029031,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.633565
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 18.864517
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d165-B-00",
+          "source_id": "blld-2012",
+          "page": 165,
+          "score": 0.028992,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.580023
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 29.558726
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d003-B-00",
+          "source_id": "blld-2012",
+          "page": 3,
+          "score": 0.028219,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.585041
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 20.071187
+            }
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d146-B-00",
+          "source_id": "blld-2019",
+          "page": 146,
+          "score": 0.028175,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.559649
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 23.326045
+            }
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d161-B-00",
+        "blld-2019-d143-B-00",
+        "blld-2019-d144-B-00"
+      ],
+      "context_chars": 1565,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "u04",
+      "split": "test",
+      "answerable": false,
+      "question": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+      "query": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+      "filter": null,
+      "elapsed_ms": 38.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d014-B-00",
+          "source_id": "blld-2019",
+          "page": 14,
+          "score": 0.032018,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.498195
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 32.052761
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d016-B-00",
+          "source_id": "blld-2012",
+          "page": 16,
+          "score": 0.030777,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.456453
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 30.404547
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d127-B-00",
+          "source_id": "blld-2019",
+          "page": 127,
+          "score": 0.029462,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.486219
+            },
+            "bm25_bigram": {
+              "rank": 15,
+              "score": 24.676911
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d045-B-00",
+          "source_id": "blld-2019",
+          "page": 45,
+          "score": 0.02901,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.446261
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 26.531442
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d018-B-00",
+          "source_id": "blld-2012",
+          "page": 18,
+          "score": 0.028219,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.432045
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 27.87416
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d021-B-00",
+          "source_id": "blld-2019",
+          "page": 21,
+          "score": 0.028191,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.443702
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 25.155157
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d020-B-01",
+          "source_id": "blld-2019",
+          "page": 20,
+          "score": 0.025816,
+          "components": {
+            "dense": {
+              "rank": 19,
+              "score": 0.428301
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 24.383663
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d177-B-00",
+          "source_id": "blld-2019",
+          "page": 177,
+          "score": 0.024828,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.430987
+            },
+            "bm25_bigram": {
+              "rank": 27,
+              "score": 21.720518
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d180-B-00",
+          "source_id": "blld-2012",
+          "page": 180,
+          "score": 0.016393,
+          "components": {
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 34.340673
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d055-B-00",
+          "source_id": "blld-2012",
+          "page": 55,
+          "score": 0.016129,
+          "components": {
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 34.066764
+            }
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d014-B-00",
+        "blld-2012-d016-B-00",
+        "blld-2019-d127-B-00"
+      ],
+      "context_chars": 1544
+    },
+    {
+      "query_id": "u05",
+      "split": "test",
+      "answerable": false,
+      "question": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+      "query": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 33.2,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d136-B-00",
+          "source_id": "blld-2019",
+          "page": 136,
+          "score": 0.029206,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.371112
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 22.475652
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d178-B-00",
+          "source_id": "blld-2019",
+          "page": 178,
+          "score": 0.02885,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.379036
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 15.684181
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d040-B-00",
+          "source_id": "blld-2019",
+          "page": 40,
+          "score": 0.028446,
+          "components": {
+            "dense": {
+              "rank": 18,
+              "score": 0.362605
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 20.699222
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d046-B-00",
+          "source_id": "blld-2019",
+          "page": 46,
+          "score": 0.028219,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.372351
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 17.686698
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.028125,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.390611
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 14.133699
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d137-B-00",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.027402,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.373323
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 15.632167
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d047-B-00",
+          "source_id": "blld-2019",
+          "page": 47,
+          "score": 0.026398,
+          "components": {
+            "dense": {
+              "rank": 24,
+              "score": 0.349805
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 17.265798
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.025196,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.375154
+            },
+            "bm25_bigram": {
+              "rank": 30,
+              "score": 12.418823
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d062-B-01",
+          "source_id": "blld-2019",
+          "page": 62,
+          "score": 0.016393,
+          "components": {
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 35.992201
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d099-B-00",
+          "source_id": "blld-2019",
+          "page": 99,
+          "score": 0.016393,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.440759
+            }
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d136-B-00",
+        "blld-2019-d178-B-00",
+        "blld-2019-d040-B-00"
+      ],
+      "context_chars": 2326
+    },
+    {
+      "query_id": "u06",
+      "split": "test",
+      "answerable": false,
+      "question": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+      "query": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+      "filter": null,
+      "elapsed_ms": 33.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d097-B-00",
+          "source_id": "blld-2012",
+          "page": 97,
+          "score": 0.032258,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.53644
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 36.90036
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.032018,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.564352
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 35.298468
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.030331,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.508574
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 25.842216
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d108-B-00",
+          "source_id": "blld-2019",
+          "page": 108,
+          "score": 0.030303,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.4727
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 26.414241
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d107-B-00",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.030159,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.521153
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 24.892954
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d107-B-00",
+          "source_id": "blld-2012",
+          "page": 107,
+          "score": 0.029418,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.446038
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 26.381542
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d107-B-01",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.028898,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.502901
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 19.33603
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d137-B-00",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.028039,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.44755
+            },
+            "bm25_bigram": {
+              "rank": 15,
+              "score": 19.051625
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d101-B-00",
+          "source_id": "blld-2019",
+          "page": 101,
+          "score": 0.025747,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.428827
+            },
+            "bm25_bigram": {
+              "rank": 23,
+              "score": 15.441716
+            }
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d155-B-00",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.025517,
+          "components": {
+            "dense": {
+              "rank": 26,
+              "score": 0.411585
+            },
+            "bm25_bigram": {
+              "rank": 12,
+              "score": 20.387785
+            }
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d097-B-00",
+        "blld-2019-d098-B-00",
+        "blld-2012-d106-B-00"
+      ],
+      "context_chars": 2921
+    }
+  ]
+}

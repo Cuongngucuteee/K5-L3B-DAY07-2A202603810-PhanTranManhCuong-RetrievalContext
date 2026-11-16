@@ -1,0 +1,20 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "40 giờ/tháng đúng Điều 107 khoản 2b."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "30 giờ/tháng đúng Điều 106 (2012)."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "Nam 60, nữ 55 + hai ngoại lệ (khoản 2, 3) chép đúng Điều 187 (2012)."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "02 ngày đúng Điều 112."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "Không quá 36 tháng; mở rộng Điều đưa d020-B-00 vào context (lỗi của A2 đã sửa)."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true, true], "reason": "200% đúng Điều 98 (2019); bản 2012 Điều 97 cũng 200% (gold thay thế)."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true], "reason": "12 ngày làm việc đúng."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "03 ngày hưởng nguyên lương đúng Điều 115 khoản 1c."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true], "reason": "Đủ 06 tháng / ≤ 02 tháng trước sinh / sinh đôi."},
+  {"query_id": "q10", "answer_grade": 1, "citation_support": [true, true], "reason": "Có 4 tháng, xác nhận y tế, NSDLĐ đồng ý; THIẾU 'phải báo trước'. Điều 157 (2012) khoản 3 cũng hỗ trợ."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true, true], "reason": "30 phút liên tục, ban đêm 45 phút (2019). Câu về 2012 'từ 30 đến 45 phút tùy thời gian làm việc' diễn đạt lỏng nhưng Điều 108 (2012) đúng là 30/45 phút."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "reason": "05 ngày/30 ngày hoặc 20 ngày/365 ngày đúng d125-B-01; lỗi A1/A2 đã sửa nhờ lượt tìm đầu dùng câu hỏi gốc."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "01 năm đúng Điều 190 khoản 3."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "06 tháng liền kề đúng Điều 46."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "04 giờ/ngày, 20 giờ/tuần, không làm thêm/ban đêm."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; nội dung Điều 91 (xác lập theo vùng, Chính phủ quyết định) đúng, không có con số."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; nói Điều 168 không có tỷ lệ — đúng."},
+  {"query_id": "u03", "abstention_correct": false, "citation_support": [false, true], "reason": "Khẳng định SAI 'lao động nam khi vợ sinh con không được nghỉ hưởng chế độ thai sản' — d139-B-01 (khoản 5) nói ngược lại. Phần lao động nữ dẫn d139-B-00 đúng."}
+]

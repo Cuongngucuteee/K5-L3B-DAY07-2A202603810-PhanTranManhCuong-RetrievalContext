@@ -1,0 +1,20 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true, false], "reason": "40 giờ/tháng đúng d107-B-00. Citation thứ hai d107-B-03 KHÔNG TỒN TẠI trong corpus (Điều 107 chỉ có B-00, B-01) -> ID bịa."},
+  {"query_id": "q02", "answer_grade": 1, "citation_support": [true], "reason": "30 giờ/tháng đúng, nhưng thêm câu sai 'bao gồm cả thời gian làm việc bình thường và làm thêm' (giới hạn 12 giờ/ngày mới gộp cả hai, 30 giờ/tháng chỉ là làm thêm)."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "Nam 60, nữ 55 + ngoại lệ đúng Điều 187 (2012)."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "02 ngày đúng."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "Không quá 36 tháng đúng d020-B-00."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true, true], "reason": "200% đúng cả 2019 (Điều 98) và 2012 (Điều 97)."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true], "reason": "12 ngày làm việc đúng."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true, true], "reason": "03 ngày đúng; Điều 116 (2012) và 115 (2019) đều ghi 03 ngày."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true], "reason": "Đủ."},
+  {"query_id": "q10", "answer_grade": 1, "citation_support": [true, true], "reason": "THIẾU 'phải báo trước' (giống A3)."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true, true], "reason": "30/45 phút đúng cả hai bản."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "reason": "Đúng d125-B-01."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "01 năm đúng."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true, true, true], "reason": "06 tháng đúng Điều 46 (2019); Điều 48/49 (2012) cũng dùng lương bình quân 06 tháng cho trợ cấp thôi việc/mất việc. Diễn đạt câu 2012 lủng củng nhưng không sai."},
+  {"query_id": "q15", "answer_grade": 1, "citation_support": [true, true], "reason": "04 giờ/20 giờ đúng (2019) nhưng thêm câu sai 'không có thông tin … theo BLLĐ 2012' trong khi chính d163 (2012) có cùng giới hạn; bỏ ý không làm thêm/ban đêm."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, không con số."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, đúng là Điều 168/186 không có tỷ lệ."},
+  {"query_id": "u03", "abstention_correct": false, "citation_support": [false, true], "reason": "Cùng lỗi A3: khẳng định sai lao động nam không được nghỉ hưởng chế độ thai sản (ngược khoản 5 Điều 139)."}
+]

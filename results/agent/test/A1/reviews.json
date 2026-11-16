@@ -1,0 +1,10 @@
+[
+  {"query_id": "q16", "answer_grade": 2, "citation_support": [true], "reason": "Không quá 180 ngày, đúng Điều 25 khoản 1 (2019)."},
+  {"query_id": "q17", "answer_grade": 0, "citation_support": [false], "reason": "Con số 30 ngày đúng nhưng KHÔNG có trong context: d037-B-00 chỉ chứa khoản 1 (các trường hợp), thời hạn báo trước nằm ở d037-B-01 không được lấy. Câu trả lời đến từ kiến thức sẵn có của model -> thiếu evidence, citation không hỗ trợ."},
+  {"query_id": "q18", "answer_grade": 2, "citation_support": [true], "reason": "45 ngày, đúng Điều 35 khoản 1a (2019, NLĐ đơn phương)."},
+  {"query_id": "q19", "answer_grade": 2, "citation_support": [true], "reason": "Không áp dụng thử việc với HĐ dưới 01 tháng, Điều 24 khoản 3."},
+  {"query_id": "q20", "answer_grade": 0, "citation_support": [], "reason": "Model in pseudo tool call dạng text hai lần (kể cả sau reprompt) -> không có lượt tìm nào, output rác -> abstain. Tính 0, không loại khỏi mẫu số."},
+  {"query_id": "u04", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; mô tả Điều 14/13/127 đúng, không nêu mức phạt."},
+  {"query_id": "u05", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; không khẳng định thêm."},
+  {"query_id": "u06", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; nói Điều 98/107 không đề cập miễn thuế — đúng."}
+]

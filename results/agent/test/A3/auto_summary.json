@@ -1,0 +1,33 @@
+{
+  "config": "A3",
+  "retriever": "hybrid",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 8000,
+  "expand_article": true,
+  "seed_original": true,
+  "hypothesis": "Sửa lỗi dev A1 q12 (query model quá ngắn, tìm 1 lần rồi dừng): lượt đầu luôn dùng câu hỏi gốc; + mở rộng cùng Điều (R7, Ctx 15/15). Budget 8000 để chứa phần mở rộng.",
+  "model": "qwen2.5:7b",
+  "split": "test",
+  "run_at": "2026-11-16T12:10:40+00:00",
+  "n": 8,
+  "errors": 0,
+  "tool_use": "8/8",
+  "searches_distribution": {
+    "0": 0,
+    "1": 8,
+    "2": 0,
+    "3": 0
+  },
+  "context_evidence": "5/5",
+  "cited_evidence": "4/5",
+  "answered": 6,
+  "abstained": 2,
+  "invalid_citation_ids": 0,
+  "median_s": 8.7,
+  "total_s": 70.3,
+  "avg_prompt_tokens": 1506,
+  "avg_completion_tokens": 107,
+  "avg_context_chars": 2849,
+  "cost_usd": 0
+}

@@ -1,0 +1,33 @@
+{
+  "config": "A2",
+  "retriever": "hybrid",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 6000,
+  "expand_article": false,
+  "seed_original": false,
+  "hypothesis": "Tool hybrid RRF (R4: Hit@1 13/15 so với 12/15) -> evidence lên hạng cao hơn, ít câu sai/thiếu hơn.",
+  "model": "qwen2.5:7b",
+  "split": "dev",
+  "run_at": "2026-11-16T11:56:49+00:00",
+  "n": 18,
+  "errors": 0,
+  "tool_use": "18/18",
+  "searches_distribution": {
+    "0": 0,
+    "1": 18,
+    "2": 0,
+    "3": 0
+  },
+  "context_evidence": "13/15",
+  "cited_evidence": "12/15",
+  "answered": 13,
+  "abstained": 5,
+  "invalid_citation_ids": 0,
+  "median_s": 13.2,
+  "total_s": 238.7,
+  "avg_prompt_tokens": 2392,
+  "avg_completion_tokens": 232,
+  "avg_context_chars": 2524,
+  "cost_usd": 0
+}

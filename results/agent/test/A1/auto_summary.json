@@ -1,0 +1,33 @@
+{
+  "config": "A1",
+  "retriever": "dense",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 6000,
+  "expand_article": false,
+  "seed_original": false,
+  "hypothesis": "Baseline agent: tool = dense pgvector (R1), model tự viết query.",
+  "model": "qwen2.5:7b",
+  "split": "test",
+  "run_at": "2026-11-16T12:09:30+00:00",
+  "n": 8,
+  "errors": 0,
+  "tool_use": "7/8",
+  "searches_distribution": {
+    "0": 1,
+    "1": 7,
+    "2": 0,
+    "3": 0
+  },
+  "context_evidence": "3/5",
+  "cited_evidence": "3/5",
+  "answered": 4,
+  "abstained": 4,
+  "invalid_citation_ids": 0,
+  "median_s": 9.5,
+  "total_s": 88.0,
+  "avg_prompt_tokens": 2150,
+  "avg_completion_tokens": 197,
+  "avg_context_chars": 1860,
+  "cost_usd": 0
+}

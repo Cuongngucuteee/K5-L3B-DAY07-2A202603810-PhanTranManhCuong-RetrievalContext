@@ -1,0 +1,10 @@
+[
+  {"query_id": "q16", "answer_grade": 2, "citation_support": [true], "reason": "180 ngày, đúng Điều 25 khoản 1 (2019)."},
+  {"query_id": "q17", "answer_grade": 2, "citation_support": [true], "reason": "Ít nhất 30 ngày; d037-B-01 chứa khoản 2b (trường hợp điểm d). Mở rộng cùng Điều đưa B-01 vào context — đúng lỗi mà A1 mắc."},
+  {"query_id": "q18", "answer_grade": 1, "citation_support": [false], "reason": "Con số 45 ngày đúng nhưng trích SAI ĐIỀU: d036-B-02 là thời hạn báo trước của NGƯỜI SỬ DỤNG LAO ĐỘNG (Điều 36). Evidence đúng (d035-B-00, Điều 35) có trong context ở hạng 2 nhưng không được dẫn."},
+  {"query_id": "q19", "answer_grade": 1, "citation_support": [true, false], "reason": "Ý chính đúng (Điều 24 khoản 3, 2019). Câu thêm 'cũng được xác nhận trong BLLĐ 2012' sai: Điều 26 (2012) chỉ nói HĐ mùa vụ không phải thử việc, không nói về HĐ dưới 01 tháng."},
+  {"query_id": "q20", "answer_grade": 2, "citation_support": [true], "reason": "Chưa đủ 18 tuổi, Điều 143 khoản 1 (2019)."},
+  {"query_id": "u04", "abstention_correct": false, "citation_support": [], "reason": "Mở đầu bằng câu từ chối nhưng thêm khẳng định vô căn cứ 'doanh nghiệp có thể bị xử lý kỷ luật theo Điều 127' — Điều 127 là các hành vi cấm khi NSDLĐ xử lý kỷ luật người lao động, không áp dụng cho doanh nghiệp vi phạm."},
+  {"query_id": "u05", "abstention_correct": true, "citation_support": [], "reason": "Từ chối; mô tả Điều 136/40 không sai."},
+  {"query_id": "u06", "abstention_correct": false, "citation_support": [false, false], "reason": "Không từ chối, KHẲNG ĐỊNH SAI 'tiền lương làm thêm giờ không được miễn thuế TNCN' viện dẫn Điều 97/98 — hai điều này chỉ quy định mức 150/200/300%, không nói về thuế."}
+]

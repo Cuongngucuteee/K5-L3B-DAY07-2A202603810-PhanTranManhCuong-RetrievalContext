@@ -1,0 +1,32 @@
+{
+  "_scale": "0 = không có evidence; 1 = có nhưng thiếu điều kiện hoặc nguồn; 2 = đủ evidence và nguồn. Chấm bằng cách đọc context cuối (retrieval: top-3 sau select_context; agent: mọi đoạn model đã thấy).",
+  "R1": {
+    "q16": [2, "d025-B-00 chứa khoản 1 (180 ngày, quản lý doanh nghiệp)."],
+    "q17": [1, "Có d037-B-01 (khoản 2b: 30 ngày cho trường hợp điểm d, đ) nhưng thiếu d037-B-00 — nơi định nghĩa điểm d = 'hoàn cảnh khó khăn'; không thể nối điều kiện trong câu hỏi với khoản 2b từ context."],
+    "q18": [2, "d035-B-00 (Điều 35, NLĐ báo trước 45 ngày) ở hạng 3; hạng 1 là d036-B-02 (NSDLĐ báo trước, cũng 45 ngày) — gây nhiễu."],
+    "q19": [2, "d024-B-00 khoản 3."],
+    "q20": [2, "d143-B-00 (2019) và d161-B-00 (2012) đều định nghĩa chưa đủ 18 tuổi."]
+  },
+  "R7": {
+    "q16": [2, "Như R1."],
+    "q17": [2, "Mở rộng Điều 37 đưa cả B-00 (điểm d) và B-01 (khoản 2b) vào context — đủ điều kiện."],
+    "q18": [2, "d035-B-00 có; vẫn còn nhiễu Điều 36 (3 phần) trước Điều 35."],
+    "q19": [2, "Như R1."],
+    "q20": [2, "Như R1."]
+  },
+  "A1": {
+    "q16": [2, "d025-B-00."],
+    "q17": [0, "Query model 'đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn' lấy d037-B-00, d039, d038 — không có khoản 2 (thời hạn báo trước)."],
+    "q18": [2, "d035-B-00 có (hạng 2)."],
+    "q19": [2, "d024-B-00 có (hạng 3)."],
+    "q20": [0, "Không có lượt tìm nào (tool call hỏng) -> context rỗng."]
+  },
+  "A3": {
+    "q16": [2, "d025-B-00."],
+    "q17": [2, "B-00 + B-01 của Điều 37 (2012)."],
+    "q18": [2, "d035-B-00 có, nhưng model lại dẫn d036-B-02 (nhiễu)."],
+    "q19": [2, "d024-B-00."],
+    "q20": [2, "d143-B-00, d161-B-00."]
+  },
+  "summary": {"R1": "0:0 / 1:1 / 2:4", "R7": "0:0 / 1:0 / 2:5", "A1": "0:2 / 1:0 / 2:3", "A3": "0:0 / 1:0 / 2:5"}
+}

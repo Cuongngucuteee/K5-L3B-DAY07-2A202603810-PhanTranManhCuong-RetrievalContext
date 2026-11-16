@@ -1,0 +1,44 @@
+[
+  {
+    "id": "u01", "split": "dev", "type": "thieu_bang_chung",
+    "question": "Mức lương tối thiểu vùng I theo Bộ luật Lao động 2019 là bao nhiêu đồng một tháng?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "BLLĐ 2019 Điều 90, 91 chỉ quy định nguyên tắc lương tối thiểu và giao Chính phủ công bố mức cụ thể; corpus không có con số mức lương vùng nào.",
+    "check": "Tìm chuỗi 'vùng I', 'đồng/tháng', 'triệu đồng' trong data/raw của Day 6: 0 kết quả. Đọc Điều 91 (2019) và Điều 91 (2012): không có số tiền."
+  },
+  {
+    "id": "u02", "split": "dev", "type": "thieu_bang_chung",
+    "question": "Người lao động phải đóng bảo hiểm xã hội bắt buộc với tỷ lệ bao nhiêu phần trăm tiền lương tháng?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "BLLĐ chỉ quy định nghĩa vụ tham gia BHXH bắt buộc (Điều 168 2019, Điều 186 2012); tỷ lệ đóng nằm ở Luật Bảo hiểm xã hội, không có trong corpus.",
+    "check": "Tìm mọi '<số>%' gần từ 'bảo hiểm'/'đóng' trong corpus: chỉ có 'suy giảm khả năng lao động từ 61%' (Chương XVII 2019, sửa Luật BHXH, điều kiện hưu) và mức khấu trừ lương 30% — không phải tỷ lệ đóng."
+  },
+  {
+    "id": "u03", "split": "dev", "type": "thieu_bang_chung",
+    "question": "Lao động nam được nghỉ bao nhiêu ngày hưởng chế độ thai sản khi vợ sinh con?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "BLLĐ 2019 Điều 139 khoản 5 chỉ nói lao động nam khi vợ sinh con được nghỉ hưởng chế độ thai sản theo pháp luật BHXH, không nêu số ngày. Câu gần chủ đề, dễ bị trả lời bằng số 06 tháng của lao động nữ.",
+    "check": "Đọc Điều 139 (2019) và Điều 157 (2012); tìm 'vợ sinh con': 1 kết quả, không có số ngày."
+  },
+  {
+    "id": "u04", "split": "test", "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "BLLĐ 2019 Điều 217 và BLLĐ 2012 Điều 239 chỉ nói xử phạt vi phạm hành chính theo pháp luật; mức phạt tiền nằm ở nghị định xử phạt, không có trong corpus.",
+    "check": "Tìm 'triệu đồng', 'phạt tiền': chỉ có 'Dùng hình thức phạt tiền, cắt lương thay việc xử lý kỷ luật' (cấm, Điều 128 2012) — không phải mức phạt doanh nghiệp."
+  },
+  {
+    "id": "u05", "split": "test", "type": "thieu_bang_chung",
+    "question": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus không có quy định nào về làm việc từ xa hay hỗ trợ chi phí internet.",
+    "check": "Tìm 'internet', 'làm việc từ xa': 0 kết quả."
+  },
+  {
+    "id": "u06", "split": "test", "type": "thieu_bang_chung",
+    "question": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Thuế TNCN chỉ xuất hiện trong quy định khấu trừ tiền lương (Điều 102 2019, Điều 101 2012); miễn thuế phần lương làm thêm thuộc Luật Thuế TNCN, không có trong corpus.",
+    "check": "Tìm 'thuế thu nhập': 2 kết quả, đều là danh sách khoản trích nộp trước khi khấu trừ lương."
+  }
+]

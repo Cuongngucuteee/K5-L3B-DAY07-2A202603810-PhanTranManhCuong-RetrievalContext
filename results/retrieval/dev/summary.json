@@ -1,0 +1,215 @@
+[
+  {
+    "config": "R0",
+    "method": "dense",
+    "filter": false,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "Day 6 dense (index B) không filter — điểm xuất phát.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 10,
+    "hit3": 15,
+    "context_evidence": 15,
+    "mrr10": 0.8111,
+    "avg_context_chars": 2650,
+    "median_ms": 37.5,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q01",
+      "q02",
+      "q03",
+      "q05",
+      "q12"
+    ],
+    "wall_seconds": 13.1,
+    "run_at": "2026-11-16T12:00:01+00:00"
+  },
+  {
+    "config": "R1",
+    "method": "dense",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "BASELINE Day 7: dense + filter năm suy từ câu hỏi (= Day 6 C).",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 12,
+    "hit3": 15,
+    "context_evidence": 15,
+    "mrr10": 0.8889,
+    "avg_context_chars": 2651,
+    "median_ms": 33.2,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q01",
+      "q05",
+      "q12"
+    ],
+    "wall_seconds": 0.6,
+    "run_at": "2026-11-16T12:00:02+00:00"
+  },
+  {
+    "config": "R2",
+    "method": "bm25_syllable",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "Lexical theo âm tiết: khớp tốt số liệu/thuật ngữ pháp lý nhưng mất nghĩa từ ghép.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 12,
+    "hit3": 13,
+    "context_evidence": 13,
+    "mrr10": 0.85,
+    "avg_context_chars": 2453,
+    "median_ms": 1.5,
+    "cost_usd": 0,
+    "misses_top3": [
+      "q05",
+      "q14"
+    ],
+    "not_rank1": [
+      "q02",
+      "q05",
+      "q14"
+    ],
+    "wall_seconds": 0.1,
+    "run_at": "2026-11-16T12:00:02+00:00"
+  },
+  {
+    "config": "R3",
+    "method": "bm25_bigram",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "Thêm bigram âm tiết xấp xỉ từ ghép tiếng Việt -> xếp hạng lexical tốt hơn R2.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 12,
+    "hit3": 14,
+    "context_evidence": 14,
+    "mrr10": 0.8556,
+    "avg_context_chars": 2345,
+    "median_ms": 2.1,
+    "cost_usd": 0,
+    "misses_top3": [
+      "q05"
+    ],
+    "not_rank1": [
+      "q02",
+      "q05",
+      "q14"
+    ],
+    "wall_seconds": 0.1,
+    "run_at": "2026-11-16T12:00:02+00:00"
+  },
+  {
+    "config": "R4",
+    "method": "hybrid",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "RRF dense + BM25 bigram: sửa câu dense xếp evidence ở hạng 2-3 (q01,q05,q12).",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 13,
+    "hit3": 14,
+    "context_evidence": 14,
+    "mrr10": 0.9167,
+    "avg_context_chars": 2512,
+    "median_ms": 37.0,
+    "cost_usd": 0,
+    "misses_top3": [
+      "q05"
+    ],
+    "not_rank1": [
+      "q05",
+      "q12"
+    ],
+    "wall_seconds": 0.7,
+    "run_at": "2026-11-16T12:00:02+00:00"
+  },
+  {
+    "config": "R5",
+    "method": "hybrid_rerank",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "Cross-encoder rerank 20 candidate hybrid -> tăng Hit@1.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 14,
+    "hit3": 15,
+    "context_evidence": 15,
+    "mrr10": 0.9556,
+    "avg_context_chars": 2484,
+    "median_ms": 1253.9,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q05"
+    ],
+    "wall_seconds": 31.3,
+    "run_at": "2026-11-16T12:00:34+00:00"
+  },
+  {
+    "config": "R6",
+    "method": "hybrid_rerank",
+    "filter": true,
+    "top_k": 3,
+    "budget": 6000,
+    "expand_article": true,
+    "hypothesis": "Giữ các phần cùng Điều cạnh hit -> context đủ điều kiện hơn; budget 6000 để vừa.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 14,
+    "hit3": 15,
+    "context_evidence": 15,
+    "mrr10": 0.9556,
+    "avg_context_chars": 2931,
+    "median_ms": 1268.2,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q05"
+    ],
+    "wall_seconds": 22.9,
+    "run_at": "2026-11-16T12:00:57+00:00"
+  },
+  {
+    "config": "R7",
+    "method": "hybrid",
+    "filter": true,
+    "top_k": 3,
+    "budget": 6000,
+    "expand_article": true,
+    "hypothesis": "Thêm sau lỗi q05/q12 trên dev: hit nằm ở phần khác cùng Điều -> mở rộng Điều, không rerank.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 13,
+    "hit3": 14,
+    "context_evidence": 15,
+    "mrr10": 0.9167,
+    "avg_context_chars": 2687,
+    "median_ms": 38.9,
+    "cost_usd": 0,
+    "misses_top3": [
+      "q05"
+    ],
+    "not_rank1": [
+      "q05",
+      "q12"
+    ],
+    "wall_seconds": 0.8,
+    "run_at": "2026-11-16T12:00:57+00:00"
+  }
+]

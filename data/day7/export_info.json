@@ -1,0 +1,19 @@
+{
+  "exported_at": "2026-11-16T11:39:58+00:00",
+  "strategy": "B",
+  "rows": 548,
+  "embedding_model": "AITeamVN/Vietnamese_Embedding",
+  "dimensions": 1024,
+  "articles": 462,
+  "questions": 26,
+  "split_counts": {
+    "dev": {
+      "answerable": 15,
+      "unanswerable": 3
+    },
+    "test": {
+      "answerable": 5,
+      "unanswerable": 3
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "config": "A4",
+  "retriever": "hybrid_rerank",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 8000,
+  "expand_article": true,
+  "seed_original": true,
+  "hypothesis": "A3 + cross-encoder rerank (R6) -> tăng Hit@1, giảm chunk nhiễu trong context.",
+  "model": "qwen2.5:7b",
+  "split": "dev",
+  "run_at": "2026-11-16T12:04:48+00:00",
+  "n": 18,
+  "errors": 0,
+  "tool_use": "18/18",
+  "searches_distribution": {
+    "0": 0,
+    "1": 18,
+    "2": 0,
+    "3": 0
+  },
+  "context_evidence": "15/15",
+  "cited_evidence": "15/15",
+  "answered": 16,
+  "abstained": 2,
+  "invalid_citation_ids": 1,
+  "median_s": 10.9,
+  "total_s": 203.4,
+  "avg_prompt_tokens": 1523,
+  "avg_completion_tokens": 130,
+  "avg_context_chars": 2933,
+  "cost_usd": 0
+}

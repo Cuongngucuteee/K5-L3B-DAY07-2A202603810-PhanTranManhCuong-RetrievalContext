@@ -1,0 +1,20 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "40 giờ/tháng đúng, d107-B-00 chứa khoản 2b. Câu 'ngoại lệ theo khoản 3' không trích nguồn nhưng không sai."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "30 giờ/tháng đúng Điều 106 (2012)."},
+  {"query_id": "q03", "answer_grade": 1, "citation_support": [false], "reason": "Nam 60 đúng; phần nữ BỊA thêm 'nữ công nhân, viên chức 55; nữ lao động khác 50' — Điều 187 (2012) chỉ ghi nữ đủ 55. Citation không hỗ trợ câu 50 tuổi."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "02 ngày đúng Điều 112."},
+  {"query_id": "q05", "answer_grade": 0, "citation_support": [false], "reason": "Sai: nói thời hạn tối đa 'không được quy định cụ thể'. Hybrid đưa d020-B-01 (khoản 2, hết hạn 30 ngày) lên hạng 1, phần chứa '36 tháng' (B-00) không vào top-3 -> context thiếu evidence."},
+  {"query_id": "q06", "answer_grade": 0, "citation_support": [], "reason": "Nội dung 200% đúng nhưng citation bịa [chunk-387] -> abstain; chấm 0."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true], "reason": "12 ngày làm việc đúng Điều 113."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "03 ngày đúng Điều 115 khoản 1c."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true], "reason": "Đủ 06 tháng, ≤ 02 tháng trước sinh, sinh đôi."},
+  {"query_id": "q10", "answer_grade": 1, "citation_support": [true, true], "reason": "Có 4 tháng, báo trước, xác nhận y tế; THIẾU 'được NSDLĐ đồng ý'; thêm 'không quá 6 tháng' không có trong luật và hai ý không phải điều kiện (Điều 137). d137-B-01 có nội dung cấm sa thải/ưu tiên giao kết như câu trả lời nêu."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "30 phút liên tục đúng Điều 109."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [], "reason": "Từ chối sai, cùng lỗi A1: query 'nghỉ không phép' + filter 2019 do model tự thêm, không tìm lại."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "01 năm đúng Điều 190 khoản 3."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "06 tháng liền kề đúng Điều 46 khoản 3."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "04 giờ/ngày, 20 giờ/tuần đúng Điều 146."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, không đưa con số; nội dung về Điều 90/91 đúng."},
+  {"query_id": "u02", "abstention_correct": false, "citation_support": [], "reason": "Mở đầu bằng câu từ chối nhưng cuối câu trả lời KHẲNG ĐỊNH '8% ... theo Điều 168' — Điều 168 không có tỷ lệ này (bịa). Status tự động 'abstain' sai so với nội dung."},
+  {"query_id": "u03", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, không đưa số ngày. Ghi chú: mô tả Điều 139 'chỉ áp dụng cho lao động nữ và một số trường hợp như…' bỏ sót lao động nam ở khoản 5, nhưng là liệt kê không đầy đủ, không thêm số liệu."}
+]

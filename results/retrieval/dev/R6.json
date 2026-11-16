@@ -1,0 +1,4301 @@
+{
+  "summary": {
+    "config": "R6",
+    "method": "hybrid_rerank",
+    "filter": true,
+    "top_k": 3,
+    "budget": 6000,
+    "expand_article": true,
+    "hypothesis": "Giữ các phần cùng Điều cạnh hit -> context đủ điều kiện hơn; budget 6000 để vừa.",
+    "split": "dev",
+    "N_answerable": 15,
+    "hit1": 14,
+    "hit3": 15,
+    "context_evidence": 15,
+    "mrr10": 0.9556,
+    "avg_context_chars": 2931,
+    "median_ms": 1268.2,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q05"
+    ],
+    "wall_seconds": 22.9,
+    "run_at": "2026-11-16T12:00:57+00:00"
+  },
+  "traces": [
+    {
+      "query_id": "q01",
+      "split": "dev",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2019, số giờ làm thêm của người lao động trong 01 tháng được giới hạn ở mức nào?",
+      "query": "Theo Bộ luật Lao động 2019, số giờ làm thêm của người lao động trong 01 tháng được giới hạn ở mức nào?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 1290.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d107-B-00",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.982436,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.487348
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 64.329216
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032522
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d107-B-01",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.913472,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.527561
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 21.11467
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031099
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d146-B-00",
+          "source_id": "blld-2019",
+          "page": 146,
+          "score": 0.807836,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.409595
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 39.917367
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.030798
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d105-B-00",
+          "source_id": "blld-2019",
+          "page": 105,
+          "score": 0.714745,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.403513
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 34.716223
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.030331
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d108-B-00",
+          "source_id": "blld-2019",
+          "page": 108,
+          "score": 0.660971,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.468691
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 43.88417
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032002
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.533028,
+          "components": {
+            "dense": {
+              "rank": 21,
+              "score": 0.351714
+            },
+            "bm25_bigram": {
+              "rank": 23,
+              "score": 16.126763
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.024394
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d137-B-00",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.287812,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.41206
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 23.520959
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.030777
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d097-B-00",
+          "source_id": "blld-2019",
+          "page": 97,
+          "score": 0.168873,
+          "components": {
+            "dense": {
+              "rank": 16,
+              "score": 0.357851
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 24.896197
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.028543
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.168059,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.409677
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 19.382905
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.02885
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d109-B-00",
+          "source_id": "blld-2019",
+          "page": 109,
+          "score": 0.13603,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.378719
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 17.127249
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.026389
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d107-B-00",
+        "blld-2019-d107-B-01",
+        "blld-2019-d146-B-00"
+      ],
+      "context_chars": 2561,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q02",
+      "split": "dev",
+      "answerable": true,
+      "question": "Bộ luật Lao động 2012 cho phép làm thêm tối đa bao nhiêu giờ mỗi tháng?",
+      "query": "Bộ luật Lao động 2012 cho phép làm thêm tối đa bao nhiêu giờ mỗi tháng?",
+      "filter": {
+        "year": 2012
+      },
+      "elapsed_ms": 1171.7,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.839466,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.478961
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 23.426375
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032522
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d104-B-00",
+          "source_id": "blld-2012",
+          "page": 104,
+          "score": 0.407559,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.36003
+            }
+          },
+          "first_stage": {
+            "rank": 20,
+            "score": 0.014925
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d163-B-00",
+          "source_id": "blld-2012",
+          "page": 163,
+          "score": 0.199247,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.366505
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 13.813676
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.029469
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d117-B-00",
+          "source_id": "blld-2012",
+          "page": 117,
+          "score": 0.136529,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.33888
+            },
+            "bm25_bigram": {
+              "rank": 29,
+              "score": 8.657727
+            }
+          },
+          "first_stage": {
+            "rank": 13,
+            "score": 0.024935
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d110-B-00",
+          "source_id": "blld-2012",
+          "page": 110,
+          "score": 0.071757,
+          "components": {
+            "dense": {
+              "rank": 17,
+              "score": 0.32032
+            },
+            "bm25_bigram": {
+              "rank": 28,
+              "score": 8.910317
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.024351
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d111-B-00",
+          "source_id": "blld-2012",
+          "page": 111,
+          "score": 0.070907,
+          "components": {
+            "dense": {
+              "rank": 16,
+              "score": 0.32688
+            },
+            "bm25_bigram": {
+              "rank": 15,
+              "score": 12.550763
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.026491
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d108-B-00",
+          "source_id": "blld-2012",
+          "page": 108,
+          "score": 0.055275,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.357771
+            },
+            "bm25_bigram": {
+              "rank": 23,
+              "score": 9.223535
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.026754
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d155-B-00",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.042881,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.39119
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 13.971887
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.029911
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d097-B-00",
+          "source_id": "blld-2012",
+          "page": 97,
+          "score": 0.035034,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.408038
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 14.752698
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.030798
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d124-B-00",
+          "source_id": "blld-2012",
+          "page": 124,
+          "score": 0.031141,
+          "components": {
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 23.676564
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.016393
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d106-B-00",
+        "blld-2012-d104-B-00",
+        "blld-2012-d163-B-00"
+      ],
+      "context_chars": 2793,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q03",
+      "split": "dev",
+      "answerable": true,
+      "question": "Bộ luật Lao động 2012 quy định tuổi nghỉ hưu của lao động nam và nữ là bao nhiêu?",
+      "query": "Bộ luật Lao động 2012 quy định tuổi nghỉ hưu của lao động nam và nữ là bao nhiêu?",
+      "filter": {
+        "year": 2012
+      },
+      "elapsed_ms": 1250.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d187-B-00",
+          "source_id": "blld-2012",
+          "page": 187,
+          "score": 0.944705,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.590664
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 30.782482
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d166-B-00",
+          "source_id": "blld-2012",
+          "page": 166,
+          "score": 0.114428,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.450467
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 21.920577
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.031746
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d036-B-00",
+          "source_id": "blld-2012",
+          "page": 36,
+          "score": 0.053193,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.374645
+            },
+            "bm25_bigram": {
+              "rank": 12,
+              "score": 13.79019
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.027778
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d005-B-00",
+          "source_id": "blld-2012",
+          "page": 5,
+          "score": 0.039012,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.397124
+            }
+          },
+          "first_stage": {
+            "rank": 20,
+            "score": 0.014493
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d004-B-01",
+          "source_id": "blld-2012",
+          "page": 4,
+          "score": 0.038501,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.394786
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 11.524088
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.026585
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d167-B-00",
+          "source_id": "blld-2012",
+          "page": 167,
+          "score": 0.037586,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.425627
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 18.908323
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.03101
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d003-B-00",
+          "source_id": "blld-2012",
+          "page": 3,
+          "score": 0.037066,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.467879
+            }
+          },
+          "first_stage": {
+            "rank": 16,
+            "score": 0.016129
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d039-B-00",
+          "source_id": "blld-2012",
+          "page": 39,
+          "score": 0.03092,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.400413
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 13.588082
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.028624
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d155-B-01",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.026213,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.355007
+            },
+            "bm25_bigram": {
+              "rank": 18,
+              "score": 12.075474
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.025321
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d240-B-00",
+          "source_id": "blld-2012",
+          "page": 240,
+          "score": 0.018631,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.395819
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 16.928433
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029437
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d187-B-00",
+        "blld-2012-d166-B-00",
+        "blld-2012-d036-B-00",
+        "blld-2012-d036-B-01"
+      ],
+      "context_chars": 2769,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q04",
+      "split": "dev",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2019, người lao động được nghỉ bao nhiêu ngày vào dịp Quốc khánh?",
+      "query": "Theo Bộ luật Lao động 2019, người lao động được nghỉ bao nhiêu ngày vào dịp Quốc khánh?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 1340.4,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d112-B-00",
+          "source_id": "blld-2019",
+          "page": 112,
+          "score": 0.986993,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.504282
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 35.12447
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.872294,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.412981
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 24.568439
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.031754
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d113-B-00",
+          "source_id": "blld-2019",
+          "page": 113,
+          "score": 0.617449,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.424664
+            },
+            "bm25_bigram": {
+              "rank": 19,
+              "score": 11.462186
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.028787
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d114-B-00",
+          "source_id": "blld-2019",
+          "page": 114,
+          "score": 0.302809,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.355498
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 12.679665
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.027826
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d115-B-00",
+          "source_id": "blld-2019",
+          "page": 115,
+          "score": 0.24322,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.414658
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 15.643881
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031498
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d113-B-01",
+          "source_id": "blld-2019",
+          "page": 113,
+          "score": 0.187303,
+          "components": {
+            "dense": {
+              "rank": 22,
+              "score": 0.351467
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 14.889846
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.027347
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d101-B-00",
+          "source_id": "blld-2019",
+          "page": 101,
+          "score": 0.150677,
+          "components": {
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 11.914276
+            }
+          },
+          "first_stage": {
+            "rank": 19,
+            "score": 0.013699
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d109-B-00",
+          "source_id": "blld-2019",
+          "page": 109,
+          "score": 0.140947,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.411697
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 19.334948
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.031258
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.097479,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.403415
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 12.160064
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029236
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.063304,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.367765
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 13.415698
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.028992
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d112-B-00",
+        "blld-2019-d111-B-00",
+        "blld-2019-d113-B-00",
+        "blld-2019-d113-B-01"
+      ],
+      "context_chars": 3234,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q05",
+      "split": "dev",
+      "answerable": true,
+      "question": "Theo luật lao động năm 2019, hợp đồng lao động có thời hạn được ký tối đa bao lâu?",
+      "query": "Theo luật lao động năm 2019, hợp đồng lao động có thời hạn được ký tối đa bao lâu?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 1450.3,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d020-B-01",
+          "source_id": "blld-2019",
+          "page": 20,
+          "score": 0.835663,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.517712
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 23.138868
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032002
+          },
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d155-B-00",
+          "source_id": "blld-2019",
+          "page": 155,
+          "score": 0.663398,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.488104
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 30.861987
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.031545
+          },
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d020-B-00",
+          "source_id": "blld-2019",
+          "page": 20,
+          "score": 0.648359,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.535471
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 16.657033
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.029287
+          },
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d014-B-00",
+          "source_id": "blld-2019",
+          "page": 14,
+          "score": 0.621531,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.551918
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 17.189907
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.030092
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d036-B-00",
+          "source_id": "blld-2019",
+          "page": 36,
+          "score": 0.557031,
+          "components": {
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 20.452869
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.015152
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d035-B-00",
+          "source_id": "blld-2019",
+          "page": 35,
+          "score": 0.527116,
+          "components": {
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 23.031362
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.015873
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d036-B-02",
+          "source_id": "blld-2019",
+          "page": 36,
+          "score": 0.425737,
+          "components": {
+            "dense": {
+              "rank": 28,
+              "score": 0.415009
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 19.464516
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.02607
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d078-B-00",
+          "source_id": "blld-2019",
+          "page": 78,
+          "score": 0.327819,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.43051
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 14.518076
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.026199
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d018-B-00",
+          "source_id": "blld-2019",
+          "page": 18,
+          "score": 0.327558,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.456119
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 18.949027
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.028986
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d024-B-00",
+          "source_id": "blld-2019",
+          "page": 24,
+          "score": 0.211331,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.429704
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 18.671406
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.027598
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d020-B-01",
+        "blld-2019-d020-B-00",
+        "blld-2019-d155-B-00"
+      ],
+      "context_chars": 1857,
+      "hit1": false,
+      "hit3": true,
+      "first_hit_rank": 3,
+      "context_hit": true
+    },
+    {
+      "query_id": "q06",
+      "split": "dev",
+      "answerable": true,
+      "question": "Làm thêm giờ vào ngày nghỉ hằng tuần thì người lao động được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "query": "Làm thêm giờ vào ngày nghỉ hằng tuần thì người lao động được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "filter": null,
+      "elapsed_ms": 1149.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.99789,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.698181
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 106.81678
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d097-B-00",
+          "source_id": "blld-2012",
+          "page": 97,
+          "score": 0.997136,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.680412
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 104.935595
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.452152,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.541252
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 40.370093
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.02971
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.368622,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.488323
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 78.515319
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.030366
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d097-B-00",
+          "source_id": "blld-2019",
+          "page": 97,
+          "score": 0.313683,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.47873
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 48.563795
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.028624
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d107-B-00",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.311179,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.557163
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 36.533177
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029572
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d110-B-00",
+          "source_id": "blld-2012",
+          "page": 110,
+          "score": 0.305918,
+          "components": {
+            "dense": {
+              "rank": 24,
+              "score": 0.433098
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 72.84373
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.02753
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d101-B-00",
+          "source_id": "blld-2019",
+          "page": 101,
+          "score": 0.229143,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.505624
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 42.057075
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.029644
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d095-B-00",
+          "source_id": "blld-2012",
+          "page": 95,
+          "score": 0.193658,
+          "components": {
+            "dense": {
+              "rank": 22,
+              "score": 0.437024
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 48.806243
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.027347
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d113-B-00",
+          "source_id": "blld-2012",
+          "page": 113,
+          "score": 0.153243,
+          "components": {
+            "dense": {
+              "rank": 16,
+              "score": 0.461417
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 43.125724
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.027864
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d098-B-00",
+        "blld-2012-d097-B-00",
+        "blld-2012-d106-B-00"
+      ],
+      "context_chars": 2921,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q07",
+      "split": "dev",
+      "answerable": true,
+      "question": "Người làm công việc trong điều kiện bình thường, làm đủ 12 tháng, được nghỉ hằng năm bao nhiêu ngày?",
+      "query": "Người làm công việc trong điều kiện bình thường, làm đủ 12 tháng, được nghỉ hằng năm bao nhiêu ngày?",
+      "filter": null,
+      "elapsed_ms": 1206.8,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d111-B-00",
+          "source_id": "blld-2012",
+          "page": 111,
+          "score": 0.998854,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.536638
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 72.918564
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d113-B-00",
+          "source_id": "blld-2019",
+          "page": 113,
+          "score": 0.998814,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.6155
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 77.985244
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d114-B-00",
+          "source_id": "blld-2012",
+          "page": 114,
+          "score": 0.337855,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.420066
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 38.399468
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.029206
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d114-B-00",
+          "source_id": "blld-2019",
+          "page": 114,
+          "score": 0.275944,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.485043
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 31.213626
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.030777
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d112-B-00",
+          "source_id": "blld-2012",
+          "page": 112,
+          "score": 0.265824,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.466348
+            },
+            "bm25_bigram": {
+              "rank": 12,
+              "score": 28.692772
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.028595
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.241749,
+          "components": {
+            "dense": {
+              "rank": 17,
+              "score": 0.41887
+            },
+            "bm25_bigram": {
+              "rank": 28,
+              "score": 23.965479
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.024351
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.164086,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.517561
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 31.165974
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.030798
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d113-B-01",
+          "source_id": "blld-2019",
+          "page": 113,
+          "score": 0.145095,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.484923
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 29.572374
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.02967
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d110-B-00",
+          "source_id": "blld-2012",
+          "page": 110,
+          "score": 0.116923,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.470163
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 29.466486
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.02901
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d111-B-01",
+          "source_id": "blld-2012",
+          "page": 111,
+          "score": 0.096131,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.473709
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 29.969025
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.029857
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d111-B-00",
+        "blld-2012-d111-B-01",
+        "blld-2019-d113-B-00",
+        "blld-2019-d113-B-01",
+        "blld-2012-d114-B-00"
+      ],
+      "context_chars": 3677,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q08",
+      "split": "dev",
+      "answerable": true,
+      "question": "Khi bố mẹ ruột qua đời, nhân viên được nghỉ mà vẫn nhận đủ lương trong mấy ngày?",
+      "query": "Khi bố mẹ ruột qua đời, nhân viên được nghỉ mà vẫn nhận đủ lương trong mấy ngày?",
+      "filter": null,
+      "elapsed_ms": 1299.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d116-B-00",
+          "source_id": "blld-2012",
+          "page": 116,
+          "score": 0.771122,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.525907
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 47.974562
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032522
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d115-B-00",
+          "source_id": "blld-2019",
+          "page": 115,
+          "score": 0.491451,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.531161
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 38.380015
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032522
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d155-B-01",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.052045,
+          "components": {
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 22.561847
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.015873
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.022348,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.430234
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 19.502622
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.03031
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d113-B-00",
+          "source_id": "blld-2019",
+          "page": 113,
+          "score": 0.016276,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.44825
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 15.505192
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.029572
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d112-B-00",
+          "source_id": "blld-2019",
+          "page": 112,
+          "score": 0.014563,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.378906
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 17.610345
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.028175
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d115-B-00",
+          "source_id": "blld-2012",
+          "page": 115,
+          "score": 0.011227,
+          "components": {
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 19.125302
+            }
+          },
+          "first_stage": {
+            "rank": 17,
+            "score": 0.014706
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d139-B-00",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.008248,
+          "components": {
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 20.248367
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.015152
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d157-B-00",
+          "source_id": "blld-2012",
+          "page": 157,
+          "score": 0.008073,
+          "components": {
+            "dense": {
+              "rank": 30,
+              "score": 0.348958
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 20.270259
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.026496
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d114-B-00",
+          "source_id": "blld-2012",
+          "page": 114,
+          "score": 0.005783,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.413941
+            }
+          },
+          "first_stage": {
+            "rank": 13,
+            "score": 0.015152
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d116-B-00",
+        "blld-2019-d115-B-00",
+        "blld-2012-d155-B-01",
+        "blld-2012-d155-B-00"
+      ],
+      "context_chars": 2982,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q09",
+      "split": "dev",
+      "answerable": true,
+      "question": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con trong bao lâu?",
+      "query": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con trong bao lâu?",
+      "filter": null,
+      "elapsed_ms": 1285.4,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d139-B-00",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.999419,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.713604
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 83.259235
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d157-B-00",
+          "source_id": "blld-2012",
+          "page": 157,
+          "score": 0.999286,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.710566
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 76.258505
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d155-B-01",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.949038,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.515324
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 37.167069
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.030536
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.921726,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.506052
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 35.28964
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.029857
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d155-B-00",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.838492,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.477529
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 43.856286
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029877
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d139-B-01",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.802819,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.544518
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 53.016834
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031746
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d159-B-00",
+          "source_id": "blld-2012",
+          "page": 159,
+          "score": 0.448275,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.444127
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 31.006731
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.028778
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d240-B-00",
+          "source_id": "blld-2012",
+          "page": 240,
+          "score": 0.423458,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.408856
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 30.366901
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.027984
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d122-B-01",
+          "source_id": "blld-2019",
+          "page": 122,
+          "score": 0.376243,
+          "components": {
+            "dense": {
+              "rank": 19,
+              "score": 0.380869
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 27.042812
+            }
+          },
+          "first_stage": {
+            "rank": 17,
+            "score": 0.026357
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d037-B-00",
+          "source_id": "blld-2019",
+          "page": 37,
+          "score": 0.301616,
+          "components": {
+            "dense": {
+              "rank": 18,
+              "score": 0.382315
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 29.02176
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.026905
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d139-B-00",
+        "blld-2019-d139-B-01",
+        "blld-2012-d157-B-00",
+        "blld-2012-d155-B-01",
+        "blld-2012-d155-B-00"
+      ],
+      "context_chars": 4104,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q10",
+      "split": "dev",
+      "answerable": true,
+      "question": "Lao động nữ muốn đi làm lại trước khi hết thời gian nghỉ thai sản thì cần những điều kiện gì?",
+      "query": "Lao động nữ muốn đi làm lại trước khi hết thời gian nghỉ thai sản thì cần những điều kiện gì?",
+      "filter": null,
+      "elapsed_ms": 1202.4,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d139-B-00",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.988794,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.591312
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 76.222494
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d157-B-00",
+          "source_id": "blld-2012",
+          "page": 157,
+          "score": 0.987334,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.562886
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 75.098713
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032002
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d158-B-00",
+          "source_id": "blld-2012",
+          "page": 158,
+          "score": 0.980331,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.573329
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 56.891061
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.032002
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d140-B-00",
+          "source_id": "blld-2019",
+          "page": 140,
+          "score": 0.926981,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.547104
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 50.08905
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.03125
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d155-B-00",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.522195,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.354546
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 34.039836
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.027425
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.446192,
+          "components": {
+            "dense": {
+              "rank": 24,
+              "score": 0.348109
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 37.961928
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.027056
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d137-B-00",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.336411,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.384999
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 28.935926
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.028175
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d155-B-01",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.264598,
+          "components": {
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 39.321079
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.015385
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d138-B-00",
+          "source_id": "blld-2019",
+          "page": 138,
+          "score": 0.219294,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.41308
+            },
+            "bm25_bigram": {
+              "rank": 18,
+              "score": 23.612867
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.027106
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d139-B-01",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.107219,
+          "components": {
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 32.971033
+            }
+          },
+          "first_stage": {
+            "rank": 18,
+            "score": 0.014706
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d139-B-00",
+        "blld-2019-d139-B-01",
+        "blld-2012-d157-B-00",
+        "blld-2012-d158-B-00"
+      ],
+      "context_chars": 3061,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q11",
+      "split": "dev",
+      "answerable": true,
+      "question": "Người lao động làm việc từ 6 giờ trở lên trong một ngày được nghỉ giữa giờ ít nhất bao nhiêu phút?",
+      "query": "Người lao động làm việc từ 6 giờ trở lên trong một ngày được nghỉ giữa giờ ít nhất bao nhiêu phút?",
+      "filter": null,
+      "elapsed_ms": 1163.7,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d109-B-00",
+          "source_id": "blld-2019",
+          "page": 109,
+          "score": 0.9997,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.609213
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 112.81751
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d108-B-00",
+          "source_id": "blld-2012",
+          "page": 108,
+          "score": 0.996475,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.570805
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 71.736204
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d104-B-00",
+          "source_id": "blld-2012",
+          "page": 104,
+          "score": 0.584372,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.424324
+            }
+          },
+          "first_stage": {
+            "rank": 16,
+            "score": 0.014706
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.479077,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.451357
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 29.250969
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.03055
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d110-B-00",
+          "source_id": "blld-2012",
+          "page": 110,
+          "score": 0.411901,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.402995
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 36.085305
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029206
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d105-B-00",
+          "source_id": "blld-2019",
+          "page": 105,
+          "score": 0.319811,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.492049
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.015873
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d110-B-00",
+          "source_id": "blld-2019",
+          "page": 110,
+          "score": 0.31329,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.424774
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 31.699542
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.03031
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d109-B-00",
+          "source_id": "blld-2012",
+          "page": 109,
+          "score": 0.311651,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.430935
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 31.699542
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.03101
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.150043,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.411035
+            },
+            "bm25_bigram": {
+              "rank": 18,
+              "score": 22.749658
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.026519
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d146-B-00",
+          "source_id": "blld-2019",
+          "page": 146,
+          "score": 0.131532,
+          "components": {
+            "dense": {
+              "rank": 21,
+              "score": 0.385933
+            },
+            "bm25_bigram": {
+              "rank": 25,
+              "score": 20.759211
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.02411
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d109-B-00",
+        "blld-2012-d108-B-00",
+        "blld-2012-d104-B-00"
+      ],
+      "context_chars": 1830,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q12",
+      "split": "dev",
+      "answerable": true,
+      "question": "Nghỉ không phép bao nhiêu ngày thì người lao động có thể bị kỷ luật sa thải?",
+      "query": "Nghỉ không phép bao nhiêu ngày thì người lao động có thể bị kỷ luật sa thải?",
+      "filter": null,
+      "elapsed_ms": 1232.2,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d126-B-00",
+          "source_id": "blld-2012",
+          "page": 126,
+          "score": 0.870213,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.559864
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 36.381714
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032266
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d125-B-01",
+          "source_id": "blld-2019",
+          "page": 125,
+          "score": 0.856516,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.524051
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 33.04524
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.030798
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d111-B-00",
+          "source_id": "blld-2019",
+          "page": 111,
+          "score": 0.465814,
+          "components": {
+            "dense": {
+              "rank": 25,
+              "score": 0.458558
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 18.485118
+            }
+          },
+          "first_stage": {
+            "rank": 18,
+            "score": 0.024265
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d123-B-00",
+          "source_id": "blld-2019",
+          "page": 123,
+          "score": 0.375378,
+          "components": {
+            "dense": {
+              "rank": 10,
+              "score": 0.517476
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 19.900077
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.027444
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.331055,
+          "components": {
+            "dense": {
+              "rank": 21,
+              "score": 0.468459
+            },
+            "bm25_bigram": {
+              "rank": 19,
+              "score": 19.035667
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.025004
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d124-B-00",
+          "source_id": "blld-2012",
+          "page": 124,
+          "score": 0.306211,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.525511
+            },
+            "bm25_bigram": {
+              "rank": 22,
+              "score": 17.957333
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.027347
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d123-B-01",
+          "source_id": "blld-2012",
+          "page": 123,
+          "score": 0.263594,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.521357
+            },
+            "bm25_bigram": {
+              "rank": 23,
+              "score": 16.913495
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.026541
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d122-B-01",
+          "source_id": "blld-2019",
+          "page": 122,
+          "score": 0.231534,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.52315
+            },
+            "bm25_bigram": {
+              "rank": 25,
+              "score": 16.881594
+            }
+          },
+          "first_stage": {
+            "rank": 13,
+            "score": 0.026471
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d125-B-00",
+          "source_id": "blld-2012",
+          "page": 125,
+          "score": 0.222275,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.48768
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 26.253557
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.029139
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d126-B-00",
+          "source_id": "blld-2019",
+          "page": 126,
+          "score": 0.20907,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.472942
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 23.286696
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.027206
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d126-B-00",
+        "blld-2019-d125-B-01",
+        "blld-2019-d125-B-00",
+        "blld-2019-d111-B-00"
+      ],
+      "context_chars": 3328,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q13",
+      "split": "dev",
+      "answerable": true,
+      "question": "Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là bao lâu?",
+      "query": "Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là bao lâu?",
+      "filter": null,
+      "elapsed_ms": 1156.7,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d190-B-00",
+          "source_id": "blld-2019",
+          "page": 190,
+          "score": 0.999701,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.76066
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 91.025407
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d202-B-00",
+          "source_id": "blld-2012",
+          "page": 202,
+          "score": 0.999453,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.703078
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 86.586556
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d194-B-00",
+          "source_id": "blld-2019",
+          "page": 194,
+          "score": 0.986565,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.635073
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 71.734475
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031498
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d189-B-00",
+          "source_id": "blld-2019",
+          "page": 189,
+          "score": 0.981903,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.641559
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 59.449763
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.031258
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d201-B-00",
+          "source_id": "blld-2012",
+          "page": 201,
+          "score": 0.965724,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.577875
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 46.814734
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.028624
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d207-B-00",
+          "source_id": "blld-2012",
+          "page": 207,
+          "score": 0.964758,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.581653
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 56.286724
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029857
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d188-B-01",
+          "source_id": "blld-2019",
+          "page": 188,
+          "score": 0.939618,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.556884
+            },
+            "bm25_bigram": {
+              "rank": 27,
+              "score": 39.937775
+            }
+          },
+          "first_stage": {
+            "rank": 16,
+            "score": 0.025987
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d193-B-01",
+          "source_id": "blld-2019",
+          "page": 193,
+          "score": 0.925387,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.528045
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 46.432406
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.027027
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d219-B-08",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.855569,
+          "components": {
+            "dense": {
+              "rank": 22,
+              "score": 0.501792
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 54.083053
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.026481
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d205-B-00",
+          "source_id": "blld-2012",
+          "page": 205,
+          "score": 0.852136,
+          "components": {
+            "dense": {
+              "rank": 23,
+              "score": 0.50117
+            },
+            "bm25_bigram": {
+              "rank": 12,
+              "score": 47.679671
+            }
+          },
+          "first_stage": {
+            "rank": 17,
+            "score": 0.025937
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d190-B-00",
+        "blld-2012-d202-B-00",
+        "blld-2019-d194-B-00"
+      ],
+      "context_chars": 2305,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q14",
+      "split": "dev",
+      "answerable": true,
+      "question": "Khoản tiền trợ cấp khi nghỉ việc được tính dựa trên mức lương trung bình của mấy tháng gần nhất?",
+      "query": "Khoản tiền trợ cấp khi nghỉ việc được tính dựa trên mức lương trung bình của mấy tháng gần nhất?",
+      "filter": null,
+      "elapsed_ms": 1152.7,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d046-B-00",
+          "source_id": "blld-2019",
+          "page": 46,
+          "score": 0.882451,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.607129
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 31.555981
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032018
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d048-B-00",
+          "source_id": "blld-2012",
+          "page": 48,
+          "score": 0.764935,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.589246
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 32.885166
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032002
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d049-B-00",
+          "source_id": "blld-2012",
+          "page": 49,
+          "score": 0.603021,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.58635
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 29.896445
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.029911
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d047-B-00",
+          "source_id": "blld-2019",
+          "page": 47,
+          "score": 0.510239,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.588496
+            },
+            "bm25_bigram": {
+              "rank": 7,
+              "score": 30.936818
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.030798
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d114-B-00",
+          "source_id": "blld-2012",
+          "page": 114,
+          "score": 0.036026,
+          "components": {
+            "dense": {
+              "rank": 27,
+              "score": 0.381747
+            },
+            "bm25_bigram": {
+              "rank": 28,
+              "score": 20.484695
+            }
+          },
+          "first_stage": {
+            "rank": 17,
+            "score": 0.022858
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d041-B-00",
+          "source_id": "blld-2019",
+          "page": 41,
+          "score": 0.03051,
+          "components": {
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 31.329347
+            }
+          },
+          "first_stage": {
+            "rank": 18,
+            "score": 0.015385
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d101-B-00",
+          "source_id": "blld-2019",
+          "page": 101,
+          "score": 0.029908,
+          "components": {
+            "dense": {
+              "rank": 17,
+              "score": 0.392906
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 30.04939
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.02748
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d042-B-00",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.019801,
+          "components": {
+            "dense": {
+              "rank": 14,
+              "score": 0.3982
+            },
+            "bm25_bigram": {
+              "rank": 15,
+              "score": 26.8202
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.026847
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d041-B-01",
+          "source_id": "blld-2019",
+          "page": 41,
+          "score": 0.01518,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.426595
+            },
+            "bm25_bigram": {
+              "rank": 16,
+              "score": 26.635681
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.027651
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d043-B-00",
+          "source_id": "blld-2012",
+          "page": 43,
+          "score": 0.013679,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.386198
+            },
+            "bm25_bigram": {
+              "rank": 26,
+              "score": 22.287838
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.024128
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d046-B-00",
+        "blld-2012-d048-B-00",
+        "blld-2012-d049-B-00"
+      ],
+      "context_chars": 2757,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q15",
+      "split": "dev",
+      "answerable": true,
+      "question": "Người chưa đủ 15 tuổi được làm việc tối đa bao nhiêu giờ mỗi ngày và mỗi tuần?",
+      "query": "Người chưa đủ 15 tuổi được làm việc tối đa bao nhiêu giờ mỗi ngày và mỗi tuần?",
+      "filter": null,
+      "elapsed_ms": 1351.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d146-B-00",
+          "source_id": "blld-2019",
+          "page": 146,
+          "score": 0.996654,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.709055
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 72.006465
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d163-B-00",
+          "source_id": "blld-2012",
+          "page": 163,
+          "score": 0.991359,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.643449
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 55.56654
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d145-B-01",
+          "source_id": "blld-2019",
+          "page": 145,
+          "score": 0.72779,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.516384
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 41.857517
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.03009
+          },
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d104-B-00",
+          "source_id": "blld-2012",
+          "page": 104,
+          "score": 0.663487,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.406129
+            },
+            "bm25_bigram": {
+              "rank": 20,
+              "score": 22.477993
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.025
+          },
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d145-B-00",
+          "source_id": "blld-2019",
+          "page": 145,
+          "score": 0.633683,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.615362
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 51.651686
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031498
+          },
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d105-B-00",
+          "source_id": "blld-2019",
+          "page": 105,
+          "score": 0.593697,
+          "components": {
+            "dense": {
+              "rank": 11,
+              "score": 0.493984
+            },
+            "bm25_bigram": {
+              "rank": 14,
+              "score": 23.855472
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.027598
+          },
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d143-B-00",
+          "source_id": "blld-2019",
+          "page": 143,
+          "score": 0.35233,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.560437
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 51.665486
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.031025
+          },
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d164-B-00",
+          "source_id": "blld-2012",
+          "page": 164,
+          "score": 0.183047,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.553311
+            },
+            "bm25_bigram": {
+              "rank": 13,
+              "score": 25.608335
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.028624
+          },
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d147-B-00",
+          "source_id": "blld-2019",
+          "page": 147,
+          "score": 0.174644,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.597526
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 39.633951
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.030777
+          },
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.111445,
+          "components": {
+            "dense": {
+              "rank": 22,
+              "score": 0.399003
+            },
+            "bm25_bigram": {
+              "rank": 22,
+              "score": 21.012329
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.02439
+          },
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d146-B-00",
+        "blld-2012-d163-B-00",
+        "blld-2019-d145-B-01",
+        "blld-2019-d145-B-00"
+      ],
+      "context_chars": 3097,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "u01",
+      "split": "dev",
+      "answerable": false,
+      "question": "Mức lương tối thiểu vùng I theo Bộ luật Lao động 2019 là bao nhiêu đồng một tháng?",
+      "query": "Mức lương tối thiểu vùng I theo Bộ luật Lao động 2019 là bao nhiêu đồng một tháng?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 1322.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d091-B-00",
+          "source_id": "blld-2019",
+          "page": 91,
+          "score": 0.062193,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.46515
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 49.877139
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d029-B-01",
+          "source_id": "blld-2019",
+          "page": 29,
+          "score": 0.02863,
+          "components": {
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 27.028669
+            }
+          },
+          "first_stage": {
+            "rank": 15,
+            "score": 0.015152
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d129-B-00",
+          "source_id": "blld-2019",
+          "page": 129,
+          "score": 0.012532,
+          "components": {
+            "dense": {
+              "rank": 19,
+              "score": 0.321334
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 28.665809
+            }
+          },
+          "first_stage": {
+            "rank": 8,
+            "score": 0.028043
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d102-B-00",
+          "source_id": "blld-2019",
+          "page": 102,
+          "score": 0.012076,
+          "components": {
+            "dense": {
+              "rank": 23,
+              "score": 0.316934
+            },
+            "bm25_bigram": {
+              "rank": 23,
+              "score": 12.121146
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.024096
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.011759,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.395853
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 17.763313
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.029958
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d219-B-04",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.009545,
+          "components": {
+            "dense": {
+              "rank": 12,
+              "score": 0.327539
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 19.354037
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.028382
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d093-B-00",
+          "source_id": "blld-2019",
+          "page": 93,
+          "score": 0.006624,
+          "components": {
+            "dense": {
+              "rank": 15,
+              "score": 0.324204
+            },
+            "bm25_bigram": {
+              "rank": 17,
+              "score": 13.56488
+            }
+          },
+          "first_stage": {
+            "rank": 10,
+            "score": 0.02632
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d090-B-00",
+          "source_id": "blld-2019",
+          "page": 90,
+          "score": 0.006151,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.397196
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 34.994287
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.00588,
+          "components": {
+            "dense": {
+              "rank": 6,
+              "score": 0.347104
+            }
+          },
+          "first_stage": {
+            "rank": 16,
+            "score": 0.015152
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d099-B-00",
+          "source_id": "blld-2019",
+          "page": 99,
+          "score": 0.004964,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.33068
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 33.080213
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.030366
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d091-B-00",
+        "blld-2019-d029-B-01",
+        "blld-2019-d029-B-00",
+        "blld-2019-d129-B-00"
+      ],
+      "context_chars": 4100
+    },
+    {
+      "query_id": "u02",
+      "split": "dev",
+      "answerable": false,
+      "question": "Người lao động phải đóng bảo hiểm xã hội bắt buộc với tỷ lệ bao nhiêu phần trăm tiền lương tháng?",
+      "query": "Người lao động phải đóng bảo hiểm xã hội bắt buộc với tỷ lệ bao nhiêu phần trăm tiền lương tháng?",
+      "filter": null,
+      "elapsed_ms": 1497.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d168-B-00",
+          "source_id": "blld-2019",
+          "page": 168,
+          "score": 0.400212,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.501855
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 58.481838
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032522
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d186-B-00",
+          "source_id": "blld-2012",
+          "page": 186,
+          "score": 0.313437,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.483913
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 62.093609
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032522
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d102-B-00",
+          "source_id": "blld-2019",
+          "page": 102,
+          "score": 0.292021,
+          "components": {
+            "dense": {
+              "rank": 19,
+              "score": 0.390104
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 46.651234
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.028043
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d101-B-00",
+          "source_id": "blld-2012",
+          "page": 101,
+          "score": 0.286261,
+          "components": {
+            "dense": {
+              "rank": 20,
+              "score": 0.387051
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 47.374142
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.028125
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d145-B-00",
+          "source_id": "blld-2012",
+          "page": 145,
+          "score": 0.091485,
+          "components": {
+            "dense": {
+              "rank": 23,
+              "score": 0.38236
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 58.038259
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.027921
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d219-B-05",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.080606,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.412756
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 28.753656
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.02879
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d041-B-00",
+          "source_id": "blld-2019",
+          "page": 41,
+          "score": 0.075922,
+          "components": {
+            "dense": {
+              "rank": 22,
+              "score": 0.384758
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 32.338179
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.026901
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d219-B-04",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.058352,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.43115
+            }
+          },
+          "first_stage": {
+            "rank": 14,
+            "score": 0.015873
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d219-B-01",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.03753,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.417449
+            },
+            "bm25_bigram": {
+              "rank": 30,
+              "score": 23.436777
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.026036
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d219-B-02",
+          "source_id": "blld-2019",
+          "page": 219,
+          "score": 0.032103,
+          "components": {
+            "dense": {
+              "rank": 17,
+              "score": 0.394564
+            },
+            "bm25_bigram": {
+              "rank": 29,
+              "score": 23.718505
+            }
+          },
+          "first_stage": {
+            "rank": 13,
+            "score": 0.024223
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d168-B-00",
+        "blld-2012-d186-B-00",
+        "blld-2019-d102-B-00"
+      ],
+      "context_chars": 2740
+    },
+    {
+      "query_id": "u03",
+      "split": "dev",
+      "answerable": false,
+      "question": "Lao động nam được nghỉ bao nhiêu ngày hưởng chế độ thai sản khi vợ sinh con?",
+      "query": "Lao động nam được nghỉ bao nhiêu ngày hưởng chế độ thai sản khi vợ sinh con?",
+      "filter": null,
+      "elapsed_ms": 1321.6,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d139-B-01",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.984056,
+          "components": {
+            "dense": {
+              "rank": 1,
+              "score": 0.62656
+            },
+            "bm25_bigram": {
+              "rank": 1,
+              "score": 96.490922
+            }
+          },
+          "first_stage": {
+            "rank": 1,
+            "score": 0.032787
+          },
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d139-B-00",
+          "source_id": "blld-2019",
+          "page": 139,
+          "score": 0.96426,
+          "components": {
+            "dense": {
+              "rank": 2,
+              "score": 0.571915
+            },
+            "bm25_bigram": {
+              "rank": 2,
+              "score": 51.548655
+            }
+          },
+          "first_stage": {
+            "rank": 2,
+            "score": 0.032258
+          },
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d157-B-00",
+          "source_id": "blld-2012",
+          "page": 157,
+          "score": 0.959751,
+          "components": {
+            "dense": {
+              "rank": 3,
+              "score": 0.57088
+            },
+            "bm25_bigram": {
+              "rank": 3,
+              "score": 51.130967
+            }
+          },
+          "first_stage": {
+            "rank": 3,
+            "score": 0.031746
+          },
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.829389,
+          "components": {
+            "dense": {
+              "rank": 4,
+              "score": 0.499128
+            },
+            "bm25_bigram": {
+              "rank": 10,
+              "score": 27.369773
+            }
+          },
+          "first_stage": {
+            "rank": 6,
+            "score": 0.029911
+          },
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d155-B-01",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.823514,
+          "components": {
+            "dense": {
+              "rank": 5,
+              "score": 0.494644
+            },
+            "bm25_bigram": {
+              "rank": 6,
+              "score": 31.186076
+            }
+          },
+          "first_stage": {
+            "rank": 4,
+            "score": 0.030536
+          },
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d155-B-00",
+          "source_id": "blld-2012",
+          "page": 155,
+          "score": 0.624415,
+          "components": {
+            "dense": {
+              "rank": 8,
+              "score": 0.462962
+            },
+            "bm25_bigram": {
+              "rank": 4,
+              "score": 37.388094
+            }
+          },
+          "first_stage": {
+            "rank": 5,
+            "score": 0.030331
+          },
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d115-B-00",
+          "source_id": "blld-2019",
+          "page": 115,
+          "score": 0.362637,
+          "components": {
+            "dense": {
+              "rank": 7,
+              "score": 0.467241
+            },
+            "bm25_bigram": {
+              "rank": 9,
+              "score": 28.856154
+            }
+          },
+          "first_stage": {
+            "rank": 7,
+            "score": 0.029418
+          },
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d116-B-00",
+          "source_id": "blld-2012",
+          "page": 116,
+          "score": 0.347842,
+          "components": {
+            "dense": {
+              "rank": 9,
+              "score": 0.438851
+            },
+            "bm25_bigram": {
+              "rank": 8,
+              "score": 29.779786
+            }
+          },
+          "first_stage": {
+            "rank": 9,
+            "score": 0.029199
+          },
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d141-B-00",
+          "source_id": "blld-2019",
+          "page": 141,
+          "score": 0.207987,
+          "components": {
+            "dense": {
+              "rank": 13,
+              "score": 0.4132
+            },
+            "bm25_bigram": {
+              "rank": 11,
+              "score": 26.283092
+            }
+          },
+          "first_stage": {
+            "rank": 12,
+            "score": 0.027783
+          },
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d240-B-00",
+          "source_id": "blld-2012",
+          "page": 240,
+          "score": 0.161994,
+          "components": {
+            "dense": {
+              "rank": 17,
+              "score": 0.400862
+            },
+            "bm25_bigram": {
+              "rank": 5,
+              "score": 35.559269
+            }
+          },
+          "first_stage": {
+            "rank": 11,
+            "score": 0.028372
+          },
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d139-B-01",
+        "blld-2019-d139-B-00",
+        "blld-2012-d157-B-00"
+      ],
+      "context_chars": 2642
+    }
+  ]
+}

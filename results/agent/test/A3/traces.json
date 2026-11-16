@@ -1,0 +1,647 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "config": "A3",
+    "question": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là 180 ngày. [blld-2019-d025-B-00]",
+    "citations": [
+      "blld-2019-d025-B-00"
+    ],
+    "invalid_citations": [],
+    "user_filter": {
+      "year": 2019
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+        "model_args": {
+          "query": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?"
+        },
+        "filter": {
+          "year": 2019
+        },
+        "filter_source": "user_question",
+        "elapsed_ms": 118.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2019-d025-B-00",
+            "source_id": "blld-2019",
+            "page": 25,
+            "score": 0.032787
+          },
+          {
+            "rank": 2,
+            "id": "blld-2019-d024-B-00",
+            "source_id": "blld-2019",
+            "page": 24,
+            "score": 0.032002
+          },
+          {
+            "rank": 3,
+            "id": "blld-2019-d027-B-00",
+            "source_id": "blld-2019",
+            "page": 27,
+            "score": 0.031754
+          }
+        ],
+        "new_context_ids": [
+          "blld-2019-d025-B-00",
+          "blld-2019-d024-B-00",
+          "blld-2019-d027-B-00"
+        ],
+        "context_chars_after": 2000,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2019-d025-B-00] (Bộ luật Lao động 2019, Điều 25)\nĐiều 25. Thời gian thử việc\nThời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ phức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và bảo đảm điều kiện sau đây:\n1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp theo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu tư vào sản xuất, kinh doanh tại doanh nghiệp;\n2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên;\n3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;\n4. Không quá 06 ngày làm việc đối với công việc khác.\n\n[blld-2019-d024-B-00] (Bộ luật Lao động 2019, Điều 24)\nĐiều 24. Thử việc\n1. Người sử dụng lao động và người lao động có thể thỏa thuận nội dung thử việc ghi trong hợp đồng lao động hoặc thỏa thuận về thử việc bằng việc giao kết hợp đồng thử việc.\n2. Nội dung chủ yếu của hợp đồng thử việc gồm thời gian thử việc và nội dung quy định tại các điểm a, b, c, đ, g và h khoản 1 Điều 21 của Bộ luật này.\n3. Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng.\n\n[blld-2019-d027-B-00] (Bộ luật Lao động 2019, Điều 27)\nĐiều 27. Kết thúc thời gian thử việc\n1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo kết quả thử việc cho người lao động.\nTrường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực hiện hợp đồng lao động đã giao kết đối với trường hợp thỏa thuận thử việc trong hợp đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường hợp giao kết hợp đồng thử việc.\nTrường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã giao kết hoặc hợp đồng thử việc.\n2. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường.",
+    "context_ids": [
+      "blld-2019-d025-B-00",
+      "blld-2019-d024-B-00",
+      "blld-2019-d027-B-00"
+    ],
+    "context_chars": 2000,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1242,
+      "completion_tokens": 56,
+      "llm_ms": 5269
+    },
+    "elapsed_ms": 5392,
+    "model": "qwen2.5:7b",
+    "auto_context_evidence": true,
+    "auto_cited_evidence": true
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "config": "A3",
+    "question": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2012, người lao động làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn phải báo trước ít nhất 30 ngày cho người sử dụng lao động [blld-2012-d037-B-01].",
+    "citations": [
+      "blld-2012-d037-B-01"
+    ],
+    "invalid_citations": [],
+    "user_filter": {
+      "year": 2012
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+        "model_args": {
+          "query": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?"
+        },
+        "filter": {
+          "year": 2012
+        },
+        "filter_source": "user_question",
+        "elapsed_ms": 144.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2012-d037-B-00",
+            "source_id": "blld-2012",
+            "page": 37,
+            "score": 0.032018
+          },
+          {
+            "rank": 2,
+            "id": "blld-2012-d038-B-01",
+            "source_id": "blld-2012",
+            "page": 38,
+            "score": 0.032018
+          },
+          {
+            "rank": 3,
+            "id": "blld-2012-d037-B-01",
+            "source_id": "blld-2012",
+            "page": 37,
+            "score": 0.032002
+          }
+        ],
+        "new_context_ids": [
+          "blld-2012-d037-B-00",
+          "blld-2012-d037-B-01",
+          "blld-2012-d037-B-02",
+          "blld-2012-d038-B-01",
+          "blld-2012-d038-B-00"
+        ],
+        "context_chars_after": 4214,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2012-d037-B-00] (Bộ luật Lao động 2012, Điều 37)\nĐiều 37. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\n1. Người lao động làm việc theo hợp đồng lao động xác định thời hạn, hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng có quyền đơn phương chấm dứt hợp đồng lao động trước thời hạn trong những trường hợp sau đây:\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được bảo đảm điều kiện làm việc đã thỏa thuận trong hợp đồng lao động;\nb) Không được trả lương đầy đủ hoặc trả lương không đúng thời hạn đã thỏa thuận trong hợp đồng lao động;\nc) Bị ngược đãi, quấy rối tình dục, cưỡng bức lao động;\nd) Bản thân hoặc gia đình có hoàn cảnh khó khăn không thể tiếp tục thực hiện hợp đồng lao động;\nđ) Được bầu làm nhiệm vụ chuyên trách ở cơ quan dân cử hoặc được bổ nhiệm giữ chức vụ trong bộ máy nhà nước;\ne) Lao động nữ mang thai phải nghỉ việc theo chỉ định của cơ sở khám bệnh, chữa bệnh có thẩm quyền;\n\n[blld-2012-d037-B-01] (Bộ luật Lao động 2012, Điều 37)\nĐiều 37. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\ng) Người lao động bị ốm đau, tai nạn đã điều trị 90 ngày liên tục đối với người làm việc theo hợp đồng lao động xác định thời hạn và một phần tư thời hạn hợp đồng đối với người làm việc theo hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng mà khả năng lao động chưa được hồi phục.\n2. Khi đơn phương chấm dứt hợp đồng lao động theo quy định tại khoản 1 Điều này, người lao động phải báo cho người sử dụng lao động biết trước:\na) Ít nhất 3 ngày làm việc đối với các trường hợp quy định tại các điểm a, b, c và g khoản 1 Điều này;\nb) Ít nhất 30 ngày nếu là hợp đồng lao động xác định thời hạn; ít nhất 03 ngày làm việc nếu là hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng đối với các trường hợp quy định tại điểm d và điểm đ khoản 1 Điều này;\nc) Đối với trường hợp quy định tại điểm e khoản 1 Điều này thời hạn báo trước cho người sử dụng lao động được thực hiện theo thời hạn quy định tại Điều 156 của Bộ luật này.\n\n[blld-2012-d037-B-02] (Bộ luật Lao động 2012, Điều 37)\nĐiều 37. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\n3. Người lao động làm việc theo hợp đồng lao động không xác định thời hạn có quyền đơn phương chấm dứt hợp đồng lao động, nhưng phải báo cho người sử dụng lao động biết trước ít nhất 45 ngày, trừ trường hợp quy định tại Điều 156 của Bộ luật này.\n\n[blld-2012-d038-B-01] (Bộ luật Lao động 2012, Điều 38)\nĐiều 38. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n2. Khi đơn phương chấm dứt hợp đồng lao động người sử dụng lao động phải báo cho người lao động biết trước:\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn;\nc) Ít nhất 03 ngày làm việc đối với trường hợp quy định tại điểm b khoản 1 Điều này và đối với hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng.\n\n[blld-2012-d038-B-00] (Bộ luật Lao động 2012, Điều 38)\nĐiều 38. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n1. Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong những trường hợp sau đây:\na) Người lao động thường xuyên không hoàn thành công việc theo hợp đồng lao động;\nb) Người lao động bị ốm đau, tai nạn đã điều trị 12 tháng liên tục đối với người làm theo hợp đồng lao động không xác định thời hạn, đã điều trị 06 tháng liên tục, đối với người lao động làm theo hợp đồng lao động xác định thời hạn và quá nửa thời hạn hợp đồng lao động đối với người làm theo hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng mà khả năng lao động chưa hồi phục.\nKhi sức khỏe của người lao động bình phục, thì người lao động được xem xét để tiếp tục giao kết hợp đồng lao động;\nc) Do thiên tai, hỏa hoạn hoặc những lý do bất khả kháng khác theo quy định của pháp luật, mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng vẫn buộc phải thu hẹp sản xuất, giảm chỗ làm việc;\nd) Người lao động không có mặt tại nơi làm việc sau thời hạn quy định tại Điều 33 của Bộ luật này.",
+    "context_ids": [
+      "blld-2012-d037-B-00",
+      "blld-2012-d037-B-01",
+      "blld-2012-d037-B-02",
+      "blld-2012-d038-B-01",
+      "blld-2012-d038-B-00"
+    ],
+    "context_chars": 4214,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1951,
+      "completion_tokens": 71,
+      "llm_ms": 9031
+    },
+    "elapsed_ms": 9176,
+    "model": "qwen2.5:7b",
+    "auto_context_evidence": true,
+    "auto_cited_evidence": true
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "config": "A3",
+    "question": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+    "status": "answered",
+    "answer": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng phải báo trước ít nhất 45 ngày [chunk-id: blld-2019-d036-B-02].",
+    "citations": [
+      "blld-2019-d036-B-02"
+    ],
+    "invalid_citations": [],
+    "user_filter": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+        "model_args": {
+          "query": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?"
+        },
+        "filter": null,
+        "filter_source": null,
+        "elapsed_ms": 128.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2019-d036-B-02",
+            "source_id": "blld-2019",
+            "page": 36,
+            "score": 0.032522
+          },
+          {
+            "rank": 2,
+            "id": "blld-2019-d035-B-00",
+            "source_id": "blld-2019",
+            "page": 35,
+            "score": 0.032266
+          },
+          {
+            "rank": 3,
+            "id": "blld-2012-d038-B-01",
+            "source_id": "blld-2012",
+            "page": 38,
+            "score": 0.031754
+          }
+        ],
+        "new_context_ids": [
+          "blld-2019-d036-B-02",
+          "blld-2019-d036-B-00",
+          "blld-2019-d036-B-01",
+          "blld-2019-d035-B-00",
+          "blld-2019-d035-B-01",
+          "blld-2012-d038-B-01",
+          "blld-2012-d038-B-00"
+        ],
+        "context_chars_after": 6500,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2019-d036-B-02] (Bộ luật Lao động 2019, Điều 36)\nĐiều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định tại các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo trước cho người lao động như sau:\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng;\nc) Ít nhất 03 ngày làm việc đối với hợp đồng lao động xác định thời hạn có thời hạn dưới 12 tháng và đối với trường hợp quy định tại điểm b khoản 1 Điều này;\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được thực hiện theo quy định của Chính phủ.\n3. Khi đơn phương chấm dứt hợp đồng lao động quy định tại điểm d và điểm e khoản 1 Điều này thì người sử dụng lao động không phải báo trước cho người lao động.\n\n[blld-2019-d036-B-00] (Bộ luật Lao động 2019, Điều 36)\nĐiều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n1. Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong trường hợp sau đây:\na) Người lao động thường xuyên không hoàn thành công việc theo hợp đồng lao động được xác định theo tiêu chí đánh giá mức độ hoàn thành công việc trong quy chế của người sử dụng lao động. Quy chế đánh giá mức độ hoàn thành công việc do người sử dụng lao động ban hành nhưng phải tham khảo ý kiến tổ chức đại diện người lao động tại cơ sở đối với nơi có tổ chức đại diện người lao động tại cơ sở;\nb) Người lao động bị ốm đau, tai nạn đã điều trị 12 tháng liên tục đối với người làm việc theo hợp đồng lao động không xác định thời hạn hoặc đã điều trị 06 tháng liên tục đối với người làm việc theo hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng hoặc quá nửa thời hạn hợp đồng lao động đối với người làm việc theo hợp đồng lao động xác định thời hạn có thời hạn dưới 12 tháng mà khả năng lao động chưa hồi phục.\nKhi sức khỏe của người lao động bình phục thì người sử dụng lao động xem xét để tiếp tục giao kết hợp đồng lao động với người lao động;\n\n[blld-2019-d036-B-01] (Bộ luật Lao động 2019, Điều 36)\nĐiều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\nc) Do thiên tai, hỏa hoạn, dịch bệnh nguy hiểm, địch họa hoặc di dời, thu hẹp sản xuất, kinh doanh theo yêu cầu của cơ quan nhà nước có thẩm quyền mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng vẫn buộc phải giảm chỗ làm việc;\nd) Người lao động không có mặt tại nơi làm việc sau thời hạn quy định tại Điều 31 của Bộ luật này;\nđ) Người lao động đủ tuổi nghỉ hưu theo quy định tại Điều 169 của Bộ luật này, trừ trường hợp có thỏa thuận khác;\ne) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm việc liên tục trở lên;\ng) Người lao động cung cấp không trung thực thông tin theo quy định tại khoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng đến việc tuyển dụng người lao động.\n\n[blld-2019-d035-B-00] (Bộ luật Lao động 2019, Điều 35)\nĐiều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\n1. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng phải báo trước cho người sử dụng lao động như sau:\na) Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định thời hạn;\nb) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng;\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn dưới 12 tháng;\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được thực hiện theo quy định của Chính phủ.\n\n[blld-2019-d035-B-01] (Bộ luật Lao động 2019, Điều 35)\nĐiều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người lao động\n2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong trường hợp sau đây:\na) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại Điều 29 của Bộ luật này;\nb) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường hợp quy định tại khoản 4 Điều 97 của Bộ luật này;\nc) Bị người sử dụng lao động ngược đãi, đánh đập hoặc có lời nói, hành vi nhục mạ, hành vi làm ảnh hưởng đến sức khỏe, nhân phẩm, danh dự; bị cưỡng bức lao động;\nd) Bị quấy rối tình dục tại nơi làm việc;\nđ) Lao động nữ mang thai phải nghỉ việc theo quy định tại khoản 1 Điều 138 của Bộ luật này;\ne) Đủ tuổi nghỉ hưu theo quy định tại Điều 169 của Bộ luật này, trừ trường hợp các bên có thỏa thuận khác;\ng) Người sử dụng lao động cung cấp thông tin không trung thực theo quy định tại khoản 1 Điều 16 của Bộ luật này làm ảnh hưởng đến việc thực hiện hợp đồng lao động.\n\n[blld-2012-d038-B-01] (Bộ luật Lao động 2012, Điều 38)\nĐiều 38. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n2. Khi đơn phương chấm dứt hợp đồng lao động người sử dụng lao động phải báo cho người lao động biết trước:\na) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;\nb) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn;\nc) Ít nhất 03 ngày làm việc đối với trường hợp quy định tại điểm b khoản 1 Điều này và đối với hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng.\n\n[blld-2012-d038-B-00] (Bộ luật Lao động 2012, Điều 38)\nĐiều 38. Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động\n1. Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong những trường hợp sau đây:\na) Người lao động thường xuyên không hoàn thành công việc theo hợp đồng lao động;\nb) Người lao động bị ốm đau, tai nạn đã điều trị 12 tháng liên tục đối với người làm theo hợp đồng lao động không xác định thời hạn, đã điều trị 06 tháng liên tục, đối với người lao động làm theo hợp đồng lao động xác định thời hạn và quá nửa thời hạn hợp đồng lao động đối với người làm theo hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng mà khả năng lao động chưa hồi phục.\nKhi sức khỏe của người lao động bình phục, thì người lao động được xem xét để tiếp tục giao kết hợp đồng lao động;\nc) Do thiên tai, hỏa hoạn hoặc những lý do bất khả kháng khác theo quy định của pháp luật, mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng vẫn buộc phải thu hẹp sản xuất, giảm chỗ làm việc;\nd) Người lao động không có mặt tại nơi làm việc sau thời hạn quy định tại Điều 33 của Bộ luật này.",
+    "context_ids": [
+      "blld-2019-d036-B-02",
+      "blld-2019-d036-B-00",
+      "blld-2019-d036-B-01",
+      "blld-2019-d035-B-00",
+      "blld-2019-d035-B-01",
+      "blld-2012-d038-B-01",
+      "blld-2012-d038-B-00"
+    ],
+    "context_chars": 6500,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 2657,
+      "completion_tokens": 52,
+      "llm_ms": 11729
+    },
+    "elapsed_ms": 11858,
+    "model": "qwen2.5:7b",
+    "auto_context_evidence": true,
+    "auto_cited_evidence": false
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "config": "A3",
+    "question": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2019 [chunk-id: blld-2019-d024-B-00], không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng. Điều này cũng được xác nhận trong Bộ luật Lao động 2012 [chunk-id: blld-2012-d026-B-00].",
+    "citations": [
+      "blld-2019-d024-B-00",
+      "blld-2012-d026-B-00"
+    ],
+    "invalid_citations": [],
+    "user_filter": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+        "model_args": {
+          "query": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?"
+        },
+        "filter": null,
+        "filter_source": null,
+        "elapsed_ms": 166.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2019-d024-B-00",
+            "source_id": "blld-2019",
+            "page": 24,
+            "score": 0.031778
+          },
+          {
+            "rank": 2,
+            "id": "blld-2012-d026-B-00",
+            "source_id": "blld-2012",
+            "page": 26,
+            "score": 0.03125
+          },
+          {
+            "rank": 3,
+            "id": "blld-2019-d027-B-00",
+            "source_id": "blld-2019",
+            "page": 27,
+            "score": 0.030798
+          }
+        ],
+        "new_context_ids": [
+          "blld-2019-d024-B-00",
+          "blld-2012-d026-B-00",
+          "blld-2019-d027-B-00"
+        ],
+        "context_chars_after": 1716,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2019-d024-B-00] (Bộ luật Lao động 2019, Điều 24)\nĐiều 24. Thử việc\n1. Người sử dụng lao động và người lao động có thể thỏa thuận nội dung thử việc ghi trong hợp đồng lao động hoặc thỏa thuận về thử việc bằng việc giao kết hợp đồng thử việc.\n2. Nội dung chủ yếu của hợp đồng thử việc gồm thời gian thử việc và nội dung quy định tại các điểm a, b, c, đ, g và h khoản 1 Điều 21 của Bộ luật này.\n3. Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng.\n\n[blld-2012-d026-B-00] (Bộ luật Lao động 2012, Điều 26)\nĐiều 26. Thử việc\n1. Người sử dụng lao động và người lao động có thể thoả thuận về việc làm thử, quyền, nghĩa vụ của hai bên trong thời gian thử việc. Nếu có thoả thuận về việc làm thử thì các bên có thể giao kết hợp đồng thử việc.\nNội dung của hợp đồng thử việc gồm các nội dung quy định tại các điểm a, b, c, d, đ, g và h khoản 1 Điều 23 của Bộ luật này.\n2. Người lao động làm việc theo hợp đồng lao động mùa vụ thì không phải thử việc.\n\n[blld-2019-d027-B-00] (Bộ luật Lao động 2019, Điều 27)\nĐiều 27. Kết thúc thời gian thử việc\n1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo kết quả thử việc cho người lao động.\nTrường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực hiện hợp đồng lao động đã giao kết đối với trường hợp thỏa thuận thử việc trong hợp đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường hợp giao kết hợp đồng thử việc.\nTrường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã giao kết hoặc hợp đồng thử việc.\n2. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường.",
+    "context_ids": [
+      "blld-2019-d024-B-00",
+      "blld-2012-d026-B-00",
+      "blld-2019-d027-B-00"
+    ],
+    "context_chars": 1716,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1151,
+      "completion_tokens": 98,
+      "llm_ms": 6537
+    },
+    "elapsed_ms": 6704,
+    "model": "qwen2.5:7b",
+    "auto_context_evidence": true,
+    "auto_cited_evidence": true
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "config": "A3",
+    "question": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+    "status": "answered",
+    "answer": "Lao động chưa thành niên được hiểu là người lao động dưới 18 tuổi theo Bộ luật Lao động 2019 [blld-2019-d143-B-00].",
+    "citations": [
+      "blld-2019-d143-B-00"
+    ],
+    "invalid_citations": [],
+    "user_filter": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+        "model_args": {
+          "query": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?"
+        },
+        "filter": null,
+        "filter_source": null,
+        "elapsed_ms": 109.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2012-d161-B-00",
+            "source_id": "blld-2012",
+            "page": 161,
+            "score": 0.032787
+          },
+          {
+            "rank": 2,
+            "id": "blld-2019-d143-B-00",
+            "source_id": "blld-2019",
+            "page": 143,
+            "score": 0.032258
+          },
+          {
+            "rank": 3,
+            "id": "blld-2019-d144-B-00",
+            "source_id": "blld-2019",
+            "page": 144,
+            "score": 0.031498
+          }
+        ],
+        "new_context_ids": [
+          "blld-2012-d161-B-00",
+          "blld-2019-d143-B-00",
+          "blld-2019-d144-B-00"
+        ],
+        "context_chars_after": 1567,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2012-d161-B-00] (Bộ luật Lao động 2012, Điều 161)\nĐiều 161. Lao động chưa thành niên\nNgười lao động chưa thành niên là người lao động dưới 18 tuổi.\n\n[blld-2019-d143-B-00] (Bộ luật Lao động 2019, Điều 143)\nĐiều 143. Lao động chưa thành niên\n1. Lao động chưa thành niên là người lao động chưa đủ 18 tuổi.\n2. Người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm công việc hoặc làm việc ở nơi làm việc quy định tại Điều 147 của Bộ luật này.\n3. Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành.\n4. Người chưa đủ 13 tuổi chỉ được làm các công việc theo quy định tại khoản 3 Điều 145 của Bộ luật này.\n\n[blld-2019-d144-B-00] (Bộ luật Lao động 2019, Điều 144)\nĐiều 144. Nguyên tắc sử dụng lao động chưa thành niên\n1. Lao động chưa thành niên chỉ được làm công việc phù hợp với sức khỏe để bảo đảm sự phát triển thể lực, trí lực, nhân cách.\n2. Người sử dụng lao động khi sử dụng lao động chưa thành niên có trách nhiệm quan tâm chăm sóc người lao động về các mặt lao động, sức khỏe, học tập trong quá trình lao động.\n3. Khi sử dụng lao động chưa thành niên, người sử dụng lao động phải có sự đồng ý của cha, mẹ hoặc người giám hộ; lập sổ theo dõi riêng, ghi đầy đủ họ tên, ngày tháng năm sinh, công việc đang làm, kết quả những lần kiểm tra sức khỏe định kỳ và xuất trình khi cơ quan nhà nước có thẩm quyền yêu cầu.\n4. Người sử dụng lao động phải tạo cơ hội để lao động chưa thành niên được học văn hóa, giáo dục nghề nghiệp, đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề.",
+    "context_ids": [
+      "blld-2012-d161-B-00",
+      "blld-2019-d143-B-00",
+      "blld-2019-d144-B-00"
+    ],
+    "context_chars": 1567,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1110,
+      "completion_tokens": 48,
+      "llm_ms": 4439
+    },
+    "elapsed_ms": 4549,
+    "model": "qwen2.5:7b",
+    "auto_context_evidence": true,
+    "auto_cited_evidence": true
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "config": "A3",
+    "question": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.\n\nTuy nhiên, điều luật liên quan đến việc ký hợp đồng lao động được nêu ở Điều 14 của Bộ luật Lao động 2019 [blld-2019-d014-B-00]. Theo đó, hợp đồng lao động phải được giao kết bằng văn bản. Nếu không tuân thủ quy định này, doanh nghiệp có thể bị xử lý kỷ luật theo Điều 127 của Bộ luật Lao động 2019 [blld-2019-d127-B-00], nhưng điều luật này không đề cập đến việc phạt tiền cụ thể.",
+    "citations": [],
+    "invalid_citations": [],
+    "user_filter": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+        "model_args": {
+          "query": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?"
+        },
+        "filter": null,
+        "filter_source": null,
+        "elapsed_ms": 128.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2019-d014-B-00",
+            "source_id": "blld-2019",
+            "page": 14,
+            "score": 0.032018
+          },
+          {
+            "rank": 2,
+            "id": "blld-2012-d016-B-00",
+            "source_id": "blld-2012",
+            "page": 16,
+            "score": 0.030777
+          },
+          {
+            "rank": 3,
+            "id": "blld-2019-d127-B-00",
+            "source_id": "blld-2019",
+            "page": 127,
+            "score": 0.029462
+          }
+        ],
+        "new_context_ids": [
+          "blld-2019-d014-B-00",
+          "blld-2012-d016-B-00",
+          "blld-2019-d127-B-00"
+        ],
+        "context_chars_after": 1546,
+        "seeded": true
+      },
+      {
+        "event": "abstain",
+        "cited_in_text": [
+          "blld-2019-d014-B-00",
+          "blld-2019-d127-B-00"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2019-d014-B-00] (Bộ luật Lao động 2019, Điều 14)\nĐiều 14. Hình thức hợp đồng lao động\n1. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành 02 bản, người lao động giữ 01 bản, người sử dụng lao động giữ 01 bản, trừ trường hợp quy định tại khoản 2 Điều này.\nHợp đồng lao động được giao kết thông qua phương tiện điện tử dưới hình thức thông điệp dữ liệu theo quy định của pháp luật về giao dịch điện tử có giá trị như hợp đồng lao động bằng văn bản.\n2. Hai bên có thể giao kết hợp đồng lao động bằng lời nói đối với hợp đồng có thời hạn dưới 01 tháng, trừ trường hợp quy định tại khoản 2 Điều 18, điểm a khoản 1 Điều 145 và khoản 1 Điều 162 của Bộ luật này.\n\n[blld-2012-d016-B-00] (Bộ luật Lao động 2012, Điều 16)\nĐiều 16. Hình thức hợp đồng lao động\n1. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành 02 bản, người lao động giữ 01 bản, người sử dụng lao động giữ 01 bản, trừ trường hợp quy định tại khoản 2 Điều này.\n2. Đối với công việc tạm thời có thời hạn dưới 03 tháng, các bên có thể giao kết hợp đồng lao động bằng lời nói.\n\n[blld-2019-d127-B-00] (Bộ luật Lao động 2019, Điều 127)\nĐiều 127. Các hành vi bị nghiêm cấm khi xử lý kỷ luật lao động\n1. Xâm phạm sức khỏe, danh dự, tính mạng, uy tín, nhân phẩm của người lao động.\n2. Phạt tiền, cắt lương thay việc xử lý kỷ luật lao động.\n3. Xử lý kỷ luật lao động đối với người lao động có hành vi vi phạm không được quy định trong nội quy lao động hoặc không thỏa thuận trong hợp đồng lao động đã giao kết hoặc pháp luật về lao động không có quy định.",
+    "context_ids": [
+      "blld-2019-d014-B-00",
+      "blld-2012-d016-B-00",
+      "blld-2019-d127-B-00"
+    ],
+    "context_chars": 1546,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1137,
+      "completion_tokens": 147,
+      "llm_ms": 8462
+    },
+    "elapsed_ms": 8590,
+    "model": "qwen2.5:7b"
+  },
+  {
+    "query_id": "u05",
+    "split": "test",
+    "config": "A3",
+    "question": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.\n\nĐiều 136 của Bộ luật Lao động 2019 đề cập đến trách nhiệm của người sử dụng lao động, nhưng không nêu chi tiết về việc hỗ trợ chi phí internet cho người lao động làm việc từ xa. Điều 40 quy định về nghĩa vụ của người lao động khi đơn phương chấm dứt hợp đồng lao động trái pháp luật, cũng không liên quan đến vấn đề này.\n\nNếu bạn có thêm thông tin hoặc điều luật cụ thể hơn, tôi sẽ rất vui được hỗ trợ bạn.",
+    "citations": [],
+    "invalid_citations": [],
+    "user_filter": {
+      "year": 2019
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+        "model_args": {
+          "query": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?"
+        },
+        "filter": {
+          "year": 2019
+        },
+        "filter_source": "user_question",
+        "elapsed_ms": 121.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2019-d136-B-00",
+            "source_id": "blld-2019",
+            "page": 136,
+            "score": 0.029206
+          },
+          {
+            "rank": 2,
+            "id": "blld-2019-d178-B-00",
+            "source_id": "blld-2019",
+            "page": 178,
+            "score": 0.02885
+          },
+          {
+            "rank": 3,
+            "id": "blld-2019-d040-B-00",
+            "source_id": "blld-2019",
+            "page": 40,
+            "score": 0.028446
+          }
+        ],
+        "new_context_ids": [
+          "blld-2019-d136-B-00",
+          "blld-2019-d178-B-00",
+          "blld-2019-d040-B-00"
+        ],
+        "context_chars_after": 2328,
+        "seeded": true
+      },
+      {
+        "event": "abstain",
+        "cited_in_text": []
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2019-d136-B-00] (Bộ luật Lao động 2019, Điều 136)\nĐiều 136. Trách nhiệm của người sử dụng lao động\n1. Bảo đảm thực hiện bình đẳng giới và các biện pháp thúc đẩy bình đẳng giới trong tuyển dụng, bố trí, sắp xếp việc làm, đào tạo, thời giờ làm việc, thời giờ nghỉ ngơi, tiền lương và các chế độ khác.\n2. Tham khảo ý kiến của lao động nữ hoặc đại diện của họ khi quyết định những vấn đề liên quan đến quyền và lợi ích của phụ nữ.\n3. Bảo đảm có đủ buồng tắm và buồng vệ sinh phù hợp tại nơi làm việc.\n4. Giúp đỡ, hỗ trợ xây dựng nhà trẻ, lớp mẫu giáo hoặc một phần chi phí gửi trẻ, mẫu giáo cho người lao động.\n\n[blld-2019-d178-B-00] (Bộ luật Lao động 2019, Điều 178)\nĐiều 178. Quyền và nghĩa vụ của tổ chức đại diện người lao động tại cơ sở trong quan hệ lao động\n1. Thương lượng tập thể với người sử dụng lao động theo quy định của Bộ luật này.\n2. Đối thoại tại nơi làm việc theo quy định của Bộ luật này.\n3. Được tham khảo ý kiến xây dựng và giám sát việc thực hiện thang lương, bảng lương, mức lao động, quy chế trả lương, quy chế thưởng, nội quy lao động và những vấn đề liên quan đến quyền, lợi ích của người lao động là thành viên của mình.\n4. Đại diện cho người lao động trong quá trình giải quyết khiếu nại, tranh chấp lao động cá nhân khi được người lao động ủy quyền.\n5. Tổ chức và lãnh đạo đình công theo quy định của Bộ luật này.\n6. Tiếp nhận hỗ trợ kỹ thuật của cơ quan, tổ chức đăng ký hoạt động hợp pháp tại Việt Nam nhằm tìm hiểu pháp luật về lao động; về trình tự, thủ tục thành lập tổ chức đại diện người lao động và việc tiến hành các hoạt động đại diện trong quan hệ lao động sau khi được cấp đăng ký.\n7. Được người sử dụng lao động bố trí nơi làm việc và được cung cấp thông tin, bảo đảm các điều kiện cần thiết cho hoạt động của tổ chức đại diện người lao động tại cơ sở.\n8. Các quyền và nghĩa vụ khác theo quy định của pháp luật.\n\n[blld-2019-d040-B-00] (Bộ luật Lao động 2019, Điều 40)\nĐiều 40. Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp đồng lao động trái pháp luật\n1. Không được trợ cấp thôi việc.\n2. Phải bồi thường cho người sử dụng lao động nửa tháng tiền lương theo hợp đồng lao động và một khoản tiền tương ứng với tiền lương theo hợp đồng lao động trong những ngày không báo trước.\n3. Phải hoàn trả cho người sử dụng lao động chi phí đào tạo quy định tại Điều 62 của Bộ luật này.",
+    "context_ids": [
+      "blld-2019-d136-B-00",
+      "blld-2019-d178-B-00",
+      "blld-2019-d040-B-00"
+    ],
+    "context_chars": 2328,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1329,
+      "completion_tokens": 127,
+      "llm_ms": 8605
+    },
+    "elapsed_ms": 8727,
+    "model": "qwen2.5:7b"
+  },
+  {
+    "query_id": "u06",
+    "split": "test",
+    "config": "A3",
+    "question": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+    "status": "answered",
+    "answer": "Theo quy định tại Điều 97 của Bộ luật Lao động năm 2012 và Điều 98 của Bộ luật Lao động năm 2019, tiền lương làm thêm giờ không được miễn thuế thu nhập cá nhân. Người lao động làm thêm giờ sẽ nhận được mức lương cao hơn so với thời gian làm việc bình thường:\n\n- Vào ngày thường: ít nhất bằng 150%.\n- Vào ngày nghỉ hằng tuần: ít nhất bằng 200%.\n- Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương: ít nhất bằng 300%.\n\nNgoài ra, người lao động làm việc vào ban đêm sẽ được trả thêm ít nhất bằng 30% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc của ngày làm việc bình thường. Nếu làm thêm giờ vào ban đêm, họ còn được trả thêm 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban ngày.\n\n[blld-2012-d097-B-00] [blld-2019-d098-B-00]",
+    "citations": [
+      "blld-2012-d097-B-00",
+      "blld-2019-d098-B-00"
+    ],
+    "invalid_citations": [],
+    "user_filter": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_law",
+        "query": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+        "model_args": {
+          "query": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?"
+        },
+        "filter": null,
+        "filter_source": null,
+        "elapsed_ms": 117.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "blld-2012-d097-B-00",
+            "source_id": "blld-2012",
+            "page": 97,
+            "score": 0.032258
+          },
+          {
+            "rank": 2,
+            "id": "blld-2019-d098-B-00",
+            "source_id": "blld-2019",
+            "page": 98,
+            "score": 0.032018
+          },
+          {
+            "rank": 3,
+            "id": "blld-2012-d106-B-00",
+            "source_id": "blld-2012",
+            "page": 106,
+            "score": 0.030331
+          }
+        ],
+        "new_context_ids": [
+          "blld-2012-d097-B-00",
+          "blld-2019-d098-B-00",
+          "blld-2012-d106-B-00"
+        ],
+        "context_chars_after": 2923,
+        "seeded": true
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[blld-2012-d097-B-00] (Bộ luật Lao động 2012, Điều 97)\nĐiều 97. Tiền lương làm thêm giờ, làm việc vào ban đêm\n1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc đang làm như sau:\na) Vào ngày thường, ít nhất bằng 150%;\nb) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;\nc) Vào ngày nghỉ lễ, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể tiền lương ngày lễ, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày.\n2. Người lao động làm việc vào ban đêm, thì được trả thêm ít nhất bằng 30% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc của ngày làm việc bình thường.\n3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo quy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban ngày.\n\n[blld-2019-d098-B-00] (Bộ luật Lao động 2019, Điều 98)\nĐiều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm\n1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc đang làm như sau:\na) Vào ngày thường, ít nhất bằng 150%;\nb) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;\nc) Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày.\n2. Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc của ngày làm việc bình thường.\n3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo quy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.\n4. Chính phủ quy định chi tiết Điều này.\n\n[blld-2012-d106-B-00] (Bộ luật Lao động 2012, Điều 106)\nĐiều 106. Làm thêm giờ\n1. Làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình thường được quy định trong pháp luật, thỏa ước lao động tập thể hoặc theo nội quy lao động.\n2. Người sử dụng lao động được sử dụng người lao động làm thêm giờ khi đáp ứng đủ các điều kiện sau đây:\na) Được sự đồng ý của người lao động;\nb) Bảo đảm số giờ làm thêm của người lao động không quá 50% số giờ làm việc bình thường trong 01 ngày, trường hợp áp dụng quy định làm việc theo tuần thì tổng số giờ làm việc bình thường và số giờ làm thêm không quá 12 giờ trong 01 ngày; không quá 30 giờ trong 01 tháng và tổng số không quá 200 giờ trong 01 năm, trừ một số trường hợp đặc biệt do Chính phủ quy định thì được làm thêm giờ không quá 300 giờ trong 01 năm;\nc) Sau mỗi đợt làm thêm giờ nhiều ngày liên tục trong tháng, người sử dụng lao động phải bố trí để người lao động được nghỉ bù cho số thời gian đã không được nghỉ.",
+    "context_ids": [
+      "blld-2012-d097-B-00",
+      "blld-2019-d098-B-00",
+      "blld-2012-d106-B-00"
+    ],
+    "context_chars": 2923,
+    "dropped_for_budget": [],
+    "usage": {
+      "llm_calls": 1,
+      "prompt_tokens": 1471,
+      "completion_tokens": 258,
+      "llm_ms": 15181
+    },
+    "elapsed_ms": 15299,
+    "model": "qwen2.5:7b"
+  }
+]

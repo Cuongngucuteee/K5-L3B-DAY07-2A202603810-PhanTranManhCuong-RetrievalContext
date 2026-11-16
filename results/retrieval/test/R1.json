@@ -1,0 +1,831 @@
+{
+  "summary": {
+    "config": "R1",
+    "method": "dense",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "BASELINE Day 7: dense + filter năm suy từ câu hỏi (= Day 6 C).",
+    "split": "test",
+    "N_answerable": 5,
+    "hit1": 3,
+    "hit3": 5,
+    "context_evidence": 5,
+    "mrr10": 0.7667,
+    "avg_context_chars": 2135,
+    "median_ms": 31.9,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q17",
+      "q18"
+    ],
+    "wall_seconds": 11.9,
+    "run_at": "2026-11-16T12:07:51+00:00"
+  },
+  "traces": [
+    {
+      "query_id": "q16",
+      "split": "test",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+      "query": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 510.5,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d025-B-00",
+          "source_id": "blld-2019",
+          "page": 25,
+          "score": 0.625356,
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d024-B-00",
+          "source_id": "blld-2019",
+          "page": 24,
+          "score": 0.502562,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d026-B-00",
+          "source_id": "blld-2019",
+          "page": 26,
+          "score": 0.451444,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d027-B-00",
+          "source_id": "blld-2019",
+          "page": 27,
+          "score": 0.420337,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d034-B-01",
+          "source_id": "blld-2019",
+          "page": 34,
+          "score": 0.397567,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.389057,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d123-B-00",
+          "source_id": "blld-2019",
+          "page": 123,
+          "score": 0.385801,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d012-B-00",
+          "source_id": "blld-2019",
+          "page": 12,
+          "score": 0.379048,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d044-B-00",
+          "source_id": "blld-2019",
+          "page": 44,
+          "score": 0.371044,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.367227,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d025-B-00",
+        "blld-2019-d024-B-00",
+        "blld-2019-d026-B-00"
+      ],
+      "context_chars": 1497,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q17",
+      "split": "test",
+      "answerable": true,
+      "question": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+      "query": "Theo Bộ luật Lao động 2012, người làm hợp đồng xác định thời hạn muốn đơn phương nghỉ việc vì gia đình có hoàn cảnh khó khăn thì phải báo trước bao lâu?",
+      "filter": {
+        "year": 2012
+      },
+      "elapsed_ms": 35.9,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d038-B-01",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.623818,
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d037-B-01",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.610085,
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d037-B-02",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.547978,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d037-B-00",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.515305,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d039-B-00",
+          "source_id": "blld-2012",
+          "page": 39,
+          "score": 0.492543,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d047-B-00",
+          "source_id": "blld-2012",
+          "page": 47,
+          "score": 0.492134,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d038-B-00",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.490133,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d042-B-01",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.480497,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d042-B-00",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.473792,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d043-B-00",
+          "source_id": "blld-2012",
+          "page": 43,
+          "score": 0.47312,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d038-B-01",
+        "blld-2012-d037-B-01",
+        "blld-2012-d037-B-02"
+      ],
+      "context_chars": 2062,
+      "hit1": false,
+      "hit3": true,
+      "first_hit_rank": 2,
+      "context_hit": true
+    },
+    {
+      "query_id": "q18",
+      "split": "test",
+      "answerable": true,
+      "question": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+      "query": "Người lao động có hợp đồng không xác định thời hạn muốn đơn phương chấm dứt hợp đồng thì phải báo trước ít nhất bao nhiêu ngày?",
+      "filter": null,
+      "elapsed_ms": 35.0,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d036-B-02",
+          "source_id": "blld-2019",
+          "page": 36,
+          "score": 0.745656,
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d038-B-01",
+          "source_id": "blld-2012",
+          "page": 38,
+          "score": 0.710359,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d035-B-00",
+          "source_id": "blld-2019",
+          "page": 35,
+          "score": 0.701235,
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d037-B-02",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.694129,
+          "hit": true
+        },
+        {
+          "rank": 5,
+          "id": "blld-2012-d037-B-01",
+          "source_id": "blld-2012",
+          "page": 37,
+          "score": 0.672175,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d042-B-01",
+          "source_id": "blld-2012",
+          "page": 42,
+          "score": 0.59458,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d038-B-00",
+          "source_id": "blld-2019",
+          "page": 38,
+          "score": 0.584591,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d035-B-01",
+          "source_id": "blld-2019",
+          "page": 35,
+          "score": 0.582687,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d047-B-00",
+          "source_id": "blld-2012",
+          "page": 47,
+          "score": 0.566258,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d045-B-00",
+          "source_id": "blld-2019",
+          "page": 45,
+          "score": 0.564055,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d036-B-02",
+        "blld-2012-d038-B-01",
+        "blld-2019-d035-B-00"
+      ],
+      "context_chars": 2153,
+      "hit1": false,
+      "hit3": true,
+      "first_hit_rank": 3,
+      "context_hit": true
+    },
+    {
+      "query_id": "q19",
+      "split": "test",
+      "answerable": true,
+      "question": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+      "query": "Ký hợp đồng làm việc ngắn hơn một tháng thì có phải trải qua giai đoạn thử việc không?",
+      "filter": null,
+      "elapsed_ms": 31.3,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d024-B-00",
+          "source_id": "blld-2019",
+          "page": 24,
+          "score": 0.647625,
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d025-B-00",
+          "source_id": "blld-2019",
+          "page": 25,
+          "score": 0.637648,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "id": "blld-2012-d027-B-00",
+          "source_id": "blld-2012",
+          "page": 27,
+          "score": 0.584219,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d026-B-00",
+          "source_id": "blld-2012",
+          "page": 26,
+          "score": 0.574406,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d026-B-00",
+          "source_id": "blld-2019",
+          "page": 26,
+          "score": 0.55846,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2012-d028-B-00",
+          "source_id": "blld-2012",
+          "page": 28,
+          "score": 0.511632,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d027-B-00",
+          "source_id": "blld-2019",
+          "page": 27,
+          "score": 0.502546,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d029-B-00",
+          "source_id": "blld-2012",
+          "page": 29,
+          "score": 0.480908,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d022-B-01",
+          "source_id": "blld-2012",
+          "page": 22,
+          "score": 0.447314,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d018-B-00",
+          "source_id": "blld-2019",
+          "page": 18,
+          "score": 0.435956,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d024-B-00",
+        "blld-2019-d025-B-00",
+        "blld-2012-d027-B-00"
+      ],
+      "context_chars": 1860,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "q20",
+      "split": "test",
+      "answerable": true,
+      "question": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+      "query": "Lao động chưa thành niên được hiểu là người lao động bao nhiêu tuổi?",
+      "filter": null,
+      "elapsed_ms": 29.7,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2012-d161-B-00",
+          "source_id": "blld-2012",
+          "page": 161,
+          "score": 0.741114,
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d143-B-00",
+          "source_id": "blld-2019",
+          "page": 143,
+          "score": 0.727655,
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.633565,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d144-B-00",
+          "source_id": "blld-2019",
+          "page": 144,
+          "score": 0.609036,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d147-B-00",
+          "source_id": "blld-2019",
+          "page": 147,
+          "score": 0.60254,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d145-B-00",
+          "source_id": "blld-2019",
+          "page": 145,
+          "score": 0.599356,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "id": "blld-2012-d163-B-00",
+          "source_id": "blld-2012",
+          "page": 163,
+          "score": 0.589732,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "id": "blld-2012-d003-B-00",
+          "source_id": "blld-2012",
+          "page": 3,
+          "score": 0.585041,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d147-B-01",
+          "source_id": "blld-2019",
+          "page": 147,
+          "score": 0.58082,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "id": "blld-2012-d165-B-00",
+          "source_id": "blld-2012",
+          "page": 165,
+          "score": 0.580023,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "blld-2012-d161-B-00",
+        "blld-2019-d143-B-00",
+        "blld-2019-d003-B-00"
+      ],
+      "context_chars": 1824,
+      "hit1": true,
+      "hit3": true,
+      "first_hit_rank": 1,
+      "context_hit": true
+    },
+    {
+      "query_id": "u04",
+      "split": "test",
+      "answerable": false,
+      "question": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+      "query": "Doanh nghiệp không ký hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+      "filter": null,
+      "elapsed_ms": 32.5,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d014-B-00",
+          "source_id": "blld-2019",
+          "page": 14,
+          "score": 0.498195,
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d127-B-00",
+          "source_id": "blld-2019",
+          "page": 127,
+          "score": 0.486219,
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d013-B-00",
+          "source_id": "blld-2019",
+          "page": 13,
+          "score": 0.485413,
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d016-B-00",
+          "source_id": "blld-2012",
+          "page": 16,
+          "score": 0.456453,
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d118-B-00",
+          "source_id": "blld-2019",
+          "page": 118,
+          "score": 0.450871,
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.450262,
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d045-B-00",
+          "source_id": "blld-2019",
+          "page": 45,
+          "score": 0.446261,
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d034-B-01",
+          "source_id": "blld-2019",
+          "page": 34,
+          "score": 0.445441,
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d021-B-00",
+          "source_id": "blld-2019",
+          "page": 21,
+          "score": 0.443702,
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d008-B-00",
+          "source_id": "blld-2019",
+          "page": 8,
+          "score": 0.437532,
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d014-B-00",
+        "blld-2019-d127-B-00",
+        "blld-2019-d013-B-00"
+      ],
+      "context_chars": 1747
+    },
+    {
+      "query_id": "u05",
+      "split": "test",
+      "answerable": false,
+      "question": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+      "query": "Theo Bộ luật Lao động 2019, người lao động làm việc từ xa được công ty hỗ trợ chi phí internet bao nhiêu?",
+      "filter": {
+        "year": 2019
+      },
+      "elapsed_ms": 30.3,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d099-B-00",
+          "source_id": "blld-2019",
+          "page": 99,
+          "score": 0.440759,
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2019-d048-B-00",
+          "source_id": "blld-2019",
+          "page": 48,
+          "score": 0.401236,
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d137-B-01",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.393273,
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.390611,
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d107-B-01",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.380932,
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d178-B-00",
+          "source_id": "blld-2019",
+          "page": 178,
+          "score": 0.379036,
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d107-B-00",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.377214,
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d041-B-01",
+          "source_id": "blld-2019",
+          "page": 41,
+          "score": 0.376223,
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2019-d006-B-00",
+          "source_id": "blld-2019",
+          "page": 6,
+          "score": 0.376195,
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d090-B-00",
+          "source_id": "blld-2019",
+          "page": 90,
+          "score": 0.375656,
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d099-B-00",
+        "blld-2019-d048-B-00",
+        "blld-2019-d137-B-01"
+      ],
+      "context_chars": 3177
+    },
+    {
+      "query_id": "u06",
+      "split": "test",
+      "answerable": false,
+      "question": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+      "query": "Tiền lương làm thêm giờ có được miễn thuế thu nhập cá nhân không?",
+      "filter": null,
+      "elapsed_ms": 29.1,
+      "results": [
+        {
+          "rank": 1,
+          "id": "blld-2019-d098-B-00",
+          "source_id": "blld-2019",
+          "page": 98,
+          "score": 0.564352,
+          "hit": null
+        },
+        {
+          "rank": 2,
+          "id": "blld-2012-d097-B-00",
+          "source_id": "blld-2012",
+          "page": 97,
+          "score": 0.53644,
+          "hit": null
+        },
+        {
+          "rank": 3,
+          "id": "blld-2019-d107-B-00",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.521153,
+          "hit": null
+        },
+        {
+          "rank": 4,
+          "id": "blld-2012-d106-B-00",
+          "source_id": "blld-2012",
+          "page": 106,
+          "score": 0.508574,
+          "hit": null
+        },
+        {
+          "rank": 5,
+          "id": "blld-2019-d107-B-01",
+          "source_id": "blld-2019",
+          "page": 107,
+          "score": 0.502901,
+          "hit": null
+        },
+        {
+          "rank": 6,
+          "id": "blld-2019-d108-B-00",
+          "source_id": "blld-2019",
+          "page": 108,
+          "score": 0.4727,
+          "hit": null
+        },
+        {
+          "rank": 7,
+          "id": "blld-2019-d115-B-00",
+          "source_id": "blld-2019",
+          "page": 115,
+          "score": 0.448775,
+          "hit": null
+        },
+        {
+          "rank": 8,
+          "id": "blld-2019-d137-B-00",
+          "source_id": "blld-2019",
+          "page": 137,
+          "score": 0.44755,
+          "hit": null
+        },
+        {
+          "rank": 9,
+          "id": "blld-2012-d107-B-00",
+          "source_id": "blld-2012",
+          "page": 107,
+          "score": 0.446038,
+          "hit": null
+        },
+        {
+          "rank": 10,
+          "id": "blld-2019-d003-B-00",
+          "source_id": "blld-2019",
+          "page": 3,
+          "score": 0.434262,
+          "hit": null
+        }
+      ],
+      "context_ids": [
+        "blld-2019-d098-B-00",
+        "blld-2012-d097-B-00",
+        "blld-2019-d107-B-00"
+      ],
+      "context_chars": 2763
+    }
+  ]
+}

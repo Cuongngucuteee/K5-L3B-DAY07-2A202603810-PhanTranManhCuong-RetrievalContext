@@ -1,0 +1,52 @@
+[
+  {
+    "config": "R1",
+    "method": "dense",
+    "filter": true,
+    "top_k": 3,
+    "budget": 4000,
+    "expand_article": false,
+    "hypothesis": "BASELINE Day 7: dense + filter năm suy từ câu hỏi (= Day 6 C).",
+    "split": "test",
+    "N_answerable": 5,
+    "hit1": 3,
+    "hit3": 5,
+    "context_evidence": 5,
+    "mrr10": 0.7667,
+    "avg_context_chars": 2135,
+    "median_ms": 31.9,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q17",
+      "q18"
+    ],
+    "wall_seconds": 11.9,
+    "run_at": "2026-11-16T12:07:51+00:00"
+  },
+  {
+    "config": "R7",
+    "method": "hybrid",
+    "filter": true,
+    "top_k": 3,
+    "budget": 6000,
+    "expand_article": true,
+    "hypothesis": "Thêm sau lỗi q05/q12 trên dev: hit nằm ở phần khác cùng Điều -> mở rộng Điều, không rerank.",
+    "split": "test",
+    "N_answerable": 5,
+    "hit1": 3,
+    "hit3": 5,
+    "context_evidence": 5,
+    "mrr10": 0.7667,
+    "avg_context_chars": 2702,
+    "median_ms": 34.5,
+    "cost_usd": 0,
+    "misses_top3": [],
+    "not_rank1": [
+      "q17",
+      "q18"
+    ],
+    "wall_seconds": 0.3,
+    "run_at": "2026-11-16T12:07:52+00:00"
+  }
+]

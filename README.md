@@ -1,5 +1,37 @@
 # Day 7 — Agentic RAG
 
+> ## Bài làm — Phan Trần Mạnh Cường (2A202603810)
+>
+> **Corpus:** Bộ luật Lao động 2012 và 2019, dùng lại từ Day 6: 462 Điều, 548 chunk (strategy B). **Embedding:** `AITeamVN/Vietnamese_Embedding`, 1024 chiều, chạy local. **Store:** pgvector của Day 6. **Agent:** `qwen2.5:7b` qua Ollama, có tool calling. **Chi phí API:** $0.
+> **Retrieval:** dense (pgvector), BM25 (âm tiết / bigram), hybrid RRF, hybrid + cross-encoder rerank; thêm tùy chọn mở rộng context theo Điều. **Cấu hình chọn:** A3 (hybrid, lượt tìm đầu dùng câu hỏi gốc, mở rộng Điều).
+> Báo cáo: [report/individual/2A202603810_PhanTranManhCuong.md](report/individual/2A202603810_PhanTranManhCuong.md) · Chốt cấu hình: [results/SELECTION.md](results/SELECTION.md) · Benchmark: [benchmark/README.md](benchmark/README.md)
+>
+> ```bash
+> # 0) Chuẩn bị: pgvector Day 6 đã ingest (cd <repo Day 6>/starter && docker compose -p day6_student_starter up -d --wait)
+> #    và Ollama: ollama pull qwen2.5:7b
+> python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+> cp .env.example .env
+> python -m src.day7.build_data --day6 ../K5-L3B-DAY06-PhanTranManhCuong-2A202603810-DataIngestion   # export chunk + benchmark 26 câu
+> python -m unittest discover -s tests -v                          # test offline (mock), 25 test
+> python -m src.day7.eval_retrieval --split dev                    # R0–R7: Hit@1, Hit@3, Context Evidence
+> python -m src.day7.run_agent --split dev --configs A1 A2 A3 A4   # agent thật, lưu trace
+> python -m src.day7.review show --split dev --config A1           # in trace để chấm tay -> reviews.json
+> python -m src.day7.review summarize --split dev --configs A1 A2 A3 A4
+> # sau khi chốt (results/SELECTION.md):
+> python -m src.day7.eval_retrieval --split test --configs R1 R7
+> python -m src.day7.run_agent --split test --configs A1 A3
+> python -m src.day7.review summarize --split test --configs A1 A3
+> ```
+>
+> | Đường dẫn | Nội dung |
+> |---|---|
+> | `src/day7/` | `retrievers.py` (dense/BM25/hybrid/rerank), `context.py`, `agent.py`, `eval_retrieval.py`, `run_agent.py`, `review.py`, `build_data.py` |
+> | `data/day7/` | `chunks.json` (export từ pgvector, không có vector), `questions.json`, `cases.json`, `export_info.json` |
+> | `benchmark/` | Câu thiếu evidence + cách kiểm tra, tiêu chí chọn cấu hình chốt trước |
+> | `results/retrieval/{dev,test}/` | Trace top-10 từng câu và bảng tổng hợp cho mỗi cấu hình R* |
+> | `results/agent/{dev,test}/A*/` | `traces.json`, `reviews.json` (nhãn tay), `agent_metrics.json`, `auto_summary.json` |
+> | `results/context_review_test.json` | Chấm context 0/1/2 trên test |
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

@@ -1,0 +1,20 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true, true], "reason": "40 giờ/tháng đúng, d107-B-00 chứa khoản 2b; câu ngoại lệ dẫn d108 (làm thêm không giới hạn trong trường hợp đặc biệt) đúng nguồn."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "30 giờ/tháng đúng theo Điều 106 (2012); câu hỏi chỉ hỏi theo tháng."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "Nam 60, nữ 55 đúng Điều 187 (2012); có nêu ngoại lệ sớm/muộn hơn."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "02 ngày (02/9 + 01 ngày liền kề) đúng Điều 112."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "Không quá 36 tháng, d020-B-00 chứa khoản 1b."},
+  {"query_id": "q06", "answer_grade": 0, "citation_support": [], "reason": "Nội dung 200% đúng nhưng model bịa citation [chunk-387] không có trong context -> hệ thống chuyển thành abstain; từ chối câu có đáp án chấm 0."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true], "reason": "12 ngày làm việc đúng Điều 113 khoản 1a."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "03 ngày hưởng nguyên lương đúng Điều 115 khoản 1c."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true], "reason": "06 tháng, trước sinh ≤ 02 tháng, sinh đôi thêm 01 tháng/con — đủ."},
+  {"query_id": "q10", "answer_grade": 1, "citation_support": [true], "reason": "Có 4 tháng, đồng ý của NSDLĐ, xác nhận cơ sở y tế; THIẾU điều kiện 'phải báo trước'."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "30 phút liên tục, ban đêm 45 phút — đúng Điều 109."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [], "reason": "Từ chối sai: model tìm 1 lần với query quá ngắn 'nghỉ không phép' + tự thêm filter 2019, nhận Điều 111/113/109 (nghỉ hằng tuần/năm) rồi dừng; không tìm lại."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "01 năm kể từ ngày phát hiện vi phạm, đúng Điều 190 khoản 3."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "Bình quân 06 tháng liền kề, d046-B-00 chứa khoản 3."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "04 giờ/ngày, 20 giờ/tuần, không làm thêm/ban đêm — đúng Điều 146."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, nói Điều 91 không nêu con số; có ghi ID giả [chunk-id:91-2019] nhưng nội dung đi kèm (Chính phủ công bố mức lương tối thiểu) đúng với Điều 91, không có khẳng định con số."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "reason": "Từ chối, nêu Điều 168 không ghi tỷ lệ; không đưa con số."},
+  {"query_id": "u03", "abstention_correct": false, "citation_support": [true], "reason": "Không dùng câu từ chối; nói 'không có quy định cụ thể' rồi đưa số liệu thai sản của lao động nữ (6 tháng) — gây hiểu nhầm cho câu hỏi về lao động nam. Citation d139 đúng cho câu về lao động nữ."}
+]
